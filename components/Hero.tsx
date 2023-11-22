@@ -30,7 +30,7 @@ const Hero = () => {
                     <h5 className='text-3xl font-sora2 text-blue-300 '>Hi! </h5>
                     <Image src={Hands} width={40} height={40} alt='iconshand'/>
                     </div>
-                    <h1 className='md:text-7xl text-3xl font-bold dark:text-[#cbd5e1] text-[#334155] '>I'm <span className='text-[#5eead4] vin'> Ervin </span><span className='text-[#334155] dark:text-[#cbd5e1]'>Arviandi</span></h1>
+                    <h1 className='md:text-7xl text-3xl font-bold dark:text-[#cbd5e1] text-[#334155] '>I&apos;m <span className='text-[#5eead4] vin'> Ervin </span><span className='text-[#334155] dark:text-[#cbd5e1]'>Arviandi</span></h1>
                     <p className='font-sora text-md  my-7 md:w-10/12'>a <span className='font-bold '> front-end developer </span> who loves intuitive, clean and work with react ecosystem.</p>
 
                     <div className='flex items-center gap-3'>

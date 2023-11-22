@@ -45,9 +45,9 @@ const contact = () => {
                   <hr className='border  border-solid border-slate-700 my-5' />
 
                   <h3 className='md:text-3xl text-2xl font-bold mt-5'>Social Media</h3>
-                  <p className='dark:text-dark-100 text-white-100 md:text-md text-sm mt-4'>If you want to find me on social media, just search for <span className='font-bold text-blue-400'> @ervinarviandi.</span> That's my username on almost all platforms, so it should be easy to find me.</p>
+                  <p className='dark:text-dark-100 text-white-100 md:text-md text-sm mt-4'>If you want to find me on social media, just search for <span className='font-bold text-blue-400'> @ervinarviandi.</span> That&apos;s my username on almost all platforms, so it should be easy to find me.</p>
 
-                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-7'>But if you're short on time, I've included some links to the social media platforms I use most frequently below.</p>
+                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-7'>But if you&apos;re short on time, I&apos;ve included some links to the social media platforms I use most frequently below.</p>
                 </div>
                 <div className='flex items-center gap-4 my-5'>
                   <Link href="" className='flex items-center gap-2'><FaGithub/>Github</Link>

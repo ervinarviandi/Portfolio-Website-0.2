@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 
 
 
-const page = () => {
+const Page = () => {
 
   const { systemTheme, theme, setTheme } = useTheme();
 const [mounted, setMounted] = useState(false);
@@ -100,4 +100,4 @@ ngebut pakai Astro</Link>
   )
 }
 
-export default page
+export default Page
