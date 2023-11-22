@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply dark:bg-backgrounddark ;
+    background-color: #fbfdff;
+
+    /* height: 500vh; */
+  }
+}
+
+.myHero {
+  background: url(../public/Bg/bgpatern6.webp);
+}
+
+.myScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.MyGuestbook {
+  background: url(../public/Bg/paterrn/batthern.png);
+}
+
+
+/* .myHero h1 .vin {
+  background: url(../public/shape/header-shape.32875466.png);
+  background-repeat: repeat;
+  background-size: cover;
+} */
+
+.contact {
+  background: url(../public/Bg/bgpatern7.webp);
+}
+
+.link-underline {
+  /* border-bottom-width: 0; */
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#6ee7b7, #6ee7b7)
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+ 
+}
