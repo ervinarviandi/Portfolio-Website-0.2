@@ -98,16 +98,20 @@ const Navigation = () => {
               <Link href="/guestbook" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Guestbook
               </Link>
               </li>
-              <li>
+              {/* <li>
               <Link href="/studio" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Studio
               </Link>
-              </li>
+              </li> */}
               <li>
               <Link href="/contact" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Contact
               </Link>
               </li>
               <li>
               <Link href="/blog" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm '>Blog
+              </Link>
+              </li>
+              <li>
+              <Link href="/dashboard" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm '>Dashboard
               </Link>
               </li>
             </ul>
@@ -161,11 +165,11 @@ const Navigation = () => {
               </Link>
             </li>
            
-            <li className="p-4 text-2xl   ">
+            {/* <li className="p-4 text-2xl   ">
               <Link href="/studio" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
                 Studio
               </Link>
-            </li>
+            </li> */}
            
             <li className="p-4 text-2xl   ">
               <Link href="/contact" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
@@ -175,6 +179,11 @@ const Navigation = () => {
             <li className="p-4 text-2xl   ">
               <Link href="/blog" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
                 Blog
+              </Link>
+            </li>
+            <li className="p-4 text-2xl   ">
+              <Link href="/dashboard" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+                Dashboard
               </Link>
             </li>
            

@@ -20,12 +20,14 @@ export default function RootLayout({
 
 
 
+
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={sora.className} suppressHydrationWarning={true} >
       <Providers >
       <NextTopLoader
-          color="#5eead4"
+          // color="#5eead4"
+          color='#05b6d3'
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}

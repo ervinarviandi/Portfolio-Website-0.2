@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 
 
 
-const Page = () => {
+const page = () => {  
 
   const { systemTheme, theme, setTheme } = useTheme();
 const [mounted, setMounted] = useState(false);
@@ -86,7 +86,7 @@ ngebut pakai Astro</Link>
                     </div>
                     <div className='flex flex-col'>
                       <div className='p-4 dark:bg-[#1e1e1e] bg-[#fff] rounded-lg border border-[#272626]'>
-                        <Link href="" className='font-bold dark:text-[#fff] text-[#000]'>Cara Menggunakan Headless UI</Link>
+                        <Link href="/headless" className='font-bold dark:text-[#fff] text-[#000]'>Cara Menggunakan Headless UI</Link>
                         <div className='flex items-center text-white-100 dark:text-dark-100 mt-3 '>
                           <FaRegCalendarAlt />
                           <span className='text-xs ml-2'>Selasa, 12 Oktober 2023</span>
@@ -100,4 +100,4 @@ ngebut pakai Astro</Link>
   )
 }
 
-export default Page
+export default page
