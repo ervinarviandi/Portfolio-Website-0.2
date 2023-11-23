@@ -2,9 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaRegCalendarAlt } from "react-icons/fa"
-import {BsArrowLeftCircleFill} from "react-icons/bs"
 import Navigation from '@/components/Navigation'
-
 
 
 
@@ -15,20 +13,13 @@ const page = () => {
     <Navigation/>
     <div className='w-full pt-28'>
         <div className='lg:max-w-7xl mx-auto px-5'>
-        {/* <div className='flex justify-between items-center gap-2'>
-            <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-teal-300'>
-                <BsArrowLeftCircleFill/>
-                Back
-            </Link>
-            </div > */}
                   <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff] mt-4'>Blog</h1>
                   <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-4'>Exploring the world of code, creativity, and constant learning.</p>
                   <hr className=' border-dashed  border-gray-200 my-5' />
                   <div className='grid md:grid-cols-2 gap-5 mt-5'>
                     <div className='flex flex-col'>
                       <div className='p-4 dark:bg-[#1e1e1e] bg-[#fff] rounded-lg border border-[#272626]'>
-                        <Link href="/astroBlog" className='font-bold dark:text-[#fff] text-[#000]'>Bikin web dengan cepat, simple
-ngebut pakai Astro</Link>
+                        <Link href="/astroBlog" className='font-bold dark:text-[#fff] text-[#000]'>Bikin web dengan cepat, simple ngebut pakai Astro</Link>
                         <div className='flex flex-end items-center dark:text-dark-100 text-white-100 mt-3 '>
                           <FaRegCalendarAlt />
                           <span className='text-xs ml-2'>Selasa, 12 Oktober 2023</span>
@@ -53,7 +44,7 @@ ngebut pakai Astro</Link>
                         </div>
                       </div>
                     </div>
-                  </div>
+                </div>
         </div>
     </div>
     </>
