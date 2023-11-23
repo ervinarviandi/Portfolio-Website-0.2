@@ -1,20 +1,12 @@
 "use client"
 import React from 'react'
 import Navigation from '@/components/Navigation'
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 
 
 const page = () => {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      delay: 50
-    })
-  }, []) 
+
 
 
   return (
