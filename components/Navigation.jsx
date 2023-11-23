@@ -107,7 +107,7 @@ const Navigation = () => {
               </Link>
               </li>
               <li>
-              <Link href="/blog" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm '>Blog
+              <Link href="/myBlog" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm '>Blog
               </Link>
               </li>
               <li>
@@ -177,7 +177,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="p-4 text-2xl   ">
-              <Link href="/blog" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+              <Link href="/myBlog" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
                 Blog
               </Link>
             </li>
