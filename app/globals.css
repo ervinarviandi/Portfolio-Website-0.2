@@ -48,11 +48,41 @@
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#05b6d3, #05b6d3)
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#60a5fa, #60a5fa)
 }
 
 .link-underline:hover {
   background-size: 100% 3px;
   background-position: 0 100%;
  
+}
+
+ @keyframes rainArrow {
+   0% {
+     transform: translateY(-100%);
+    }
+    40% {
+      transform: translateY(-20%);
+    }
+    50% {
+  transform: translateY(0);
+}
+100% {
+  transform: translateY(100%);
+}
+}
+
+.animate-rain-arrow {
+  animation: rainArrow 1s ease-out infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: rainArrow;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
 }

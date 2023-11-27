@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
     <Navigation/>
-    <div className='w-full pt-28'>
+    <div className='w-full pt-20'>
         <div className='lg:max-w-7xl mx-auto px-5'>
                   <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff] mt-4'>Blog</h1>
                   <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-4'>Exploring the world of code, creativity, and constant learning.</p>

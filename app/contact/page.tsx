@@ -13,7 +13,7 @@ const contact = () => {
     <>
     <div>
         <Navigation/>
-        <div className='w-full pt-28 contact'>
+        <div className='w-full pt-20 contact'>
             <div className='md:max-w-7xl mx-auto px-5'>
                 <h1 className='md:text-5xl text-2xl font-bold '>Contact </h1>
                 <p className='md:text-xl text-lg mt-4'> 👋 Get in touch with me anytime, through social media, e-mail, or phone number.</p>

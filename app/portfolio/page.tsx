@@ -26,7 +26,7 @@ const Portfolio = () => {
       <>
     <div>
       <Navigation/>
-        <div className='w-full pt-28 MyPortfolio'>
+        <div className='w-full pt-20 MyPortfolio'>
             <div className='md:max-w-7xl mx-auto md:px-10 px-5'>
                 <div className="">
                   <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff]'>Projects</h1>

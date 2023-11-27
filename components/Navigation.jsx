@@ -153,7 +153,7 @@ const Navigation = () => {
               </Link>
             </li>
             
-            <li className="p-4 text-2xl   ">
+            <li className="p-4 text-2xl   "> 
               <Link href="/portfolio" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
                 Project
               </Link>
