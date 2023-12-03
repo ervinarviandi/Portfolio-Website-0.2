@@ -16,14 +16,17 @@ const config: Config = {
       },
       colors: {
         // backgrounddark: "#0c1222",
-        backgrounddark: "#111111",
+        // backgrounddark: "#111111",
+        backgrounddark: "#0c0c0c",
         backgroundlight: "#fdfefe",
         dark: {
-          '100': "#a5aeb8",
+          // '100': "#a5aeb8",
+          '100': "#818181",
           // '200': "#a5aeb8"
         },
         white: {
-          '100': "#475569"
+          '100': "#848484"
+          // '100': "#475569"
         }
         
       },

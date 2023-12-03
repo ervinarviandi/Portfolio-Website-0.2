@@ -18,7 +18,7 @@ const Description = "I'm also experienced at some website development and softwa
 const Projects = () => {
   return (
     <div className='w-full py-10'>
-        <div className='md:max-w-6xl mx-auto px-5 '>
+        <div className='md:max-w-6xl mx-auto px-10 '>
             <h2 className='md:text-3xl text-xl font-bold'>{Title}</h2>
             <p className='md:text-lg text-md dark:text-dark-100 text-white-100 mt-4 lg:w-10/12'>{Description}</p>
             <div className='grid md:grid-cols-2 gap-5 max-w-4xl mx-auto mt-4'>
@@ -82,7 +82,7 @@ const Projects = () => {
                             < TiPin className="text-black"/>
                             <p className='text-sm text-black'>Featured</p>
                         </div>
-                        <Image src={Projects3} width={500} height={500} alt='QrCode' className='rounded-t-lg '/>
+                        <Image src={Projects3} width={500} height={500} alt='bubbleCleaner' className='rounded-t-lg '/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/bubbleCleaner" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#60a5fa]  text-gray-200 '>View Project
                             <FaArrowRight/>

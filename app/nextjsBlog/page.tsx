@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import {BsArrowLeftCircleFill} from "react-icons/bs"
-import HeadlessContent from "@/app/headless/components/HeadlessContent"
+import NextjsblogContent from "@/app/nextjsBlog/components/NextjsblogContent"
 
 const page = () => {
   return (
@@ -14,7 +14,7 @@ const page = () => {
             </Link>
           </div>
             <div>
-                <HeadlessContent/>
+                <NextjsblogContent/>
             </div>
         </div>
     </div>

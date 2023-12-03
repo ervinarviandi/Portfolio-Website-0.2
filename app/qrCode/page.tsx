@@ -16,7 +16,7 @@ const page = () => {
     <>
     <Navigation/>
     <div className='w-full py-10 pt-[96px]'>
-        <div className="md:max-w-7xl mx-auto px-5 ">
+        <div className="md:max-w-7xl mx-auto px-10 ">
             <div className='flex items-center gap-2'>
             <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100  dark:hover:text-[#fff] hover:text-[#000]'>
                 <BsArrowLeftCircleFill/>
@@ -25,7 +25,7 @@ const page = () => {
             </div>
             <h1 className='md:text-2xl text-xl mt-10 '>QR Code Generator</h1>
             <p className='dark:text-dark-100 text-white-100 mt-3'>Personal website was built originally from scratch using several powerful stacks.</p>
-            <hr className='dark:border-dark-100 border-white-100 border border-dashed my-5 rounded-full' />
+            <hr className=' border-dashed  dark:border-[#525252] border-1 border-white-100  my-5 rounded-full' />
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>
                     <span>Tech Stack :</span>
@@ -35,11 +35,11 @@ const page = () => {
                         <TailwindLogo/> 
                 </div>
                 <div className='flex items-center gap-2 md:mt-0 mt-5'>
-                    <Link href="https://github.com/ervinarviandi/QRCode-Generator" className='flex items-center gap-3 link link-underline link-underline-black py-3 border-b border-dashed ' target='_blank'>
+                    <Link href="https://github.com/ervinarviandi/QRCode-Generator" className='flex items-center gap-3 link link-underline link-underline-black dark:border-[#525252] border-white-100 py-3 border-b border-dashed ' target='_blank'>
                         <FaGithub/>
                         Source Code
                     </Link>
-                    <Link href="https://qr-ervinarviandi.vercel.app/" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-b border-dashed' target='_blank'>
+                    <Link href="https://qr-ervinarviandi.vercel.app/" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-b dark:border-[#525252] border-white-100 border-dashed' target='_blank'>
                         <HiMiniArrowTopRightOnSquare/>
                         Live Demo
                     </Link>

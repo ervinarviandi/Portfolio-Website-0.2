@@ -6,8 +6,8 @@ const Table = () => {
   return (
     <div className='my-7'>
          <table className="table-auto  md:table-fixed 
-                  border border-gray-700 rounded-2xl ">
-                    <thead className='border rounded-2xl border-gray-700  '>
+                  border border-solid border-1 dark:border-[#525252] border-white-100 rounded-2xl ">
+                    <thead className='border rounded-2xl  border-solid border-1 dark:border-[#525252] border-white-100 '>
                       <tr className=''>
                         <th className='p-2'>Contact</th>
                         <th className='p-2'>Detail</th>                       

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
     <div className='w-full pt-10 pb-4'>
-        <div className='md:max-w-6xl mx-auto px-5'>
+        <div className='md:max-w-6xl mx-auto px-10'>
             <div className='md:flex '>
                 <div className='md:w-6/12'> 
                     <h1 className='font-bold text-xl'>Footer</h1>

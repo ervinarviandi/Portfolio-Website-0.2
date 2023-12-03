@@ -28,7 +28,7 @@ const HeadlessContent = () => {
             Selasa, 21 November 2023
           </div>
           </div>
-          <hr className=' border-dashed  border-gray-200 my-5' />
+          <hr className='   border-dashed  dark:border-[#525252] border-1 border-white-100 my-5' />
           <div>
          <h5>Introduction</h5>
          <p className='mt-3'>   

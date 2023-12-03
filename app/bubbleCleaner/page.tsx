@@ -6,24 +6,28 @@ import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
-import ImageCard from "@/app/linktreeClone/components/ImageCard"
+import ImageCard from "@/app/bubbleCleaner/components/ImageCard"
 import "../../app/globals.css"
+
+
+const Tittle = "Bubble Cleaner"
+const Description = "Personal website was built originally from scratch using several powerful stacks."
 
 const page = () => {
   return (
     <>
     <Navigation/>
     <div className='w-full py-10 pt-[96px]'>
-        <div className="md:max-w-7xl mx-auto px-5 ">
+        <div className="md:max-w-7xl mx-auto px-10 ">
             <div className='flex items-center gap-2'>
             <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] hover:text-[#000]'>
                 <BsArrowLeftCircleFill/>
                 Back
             </Link>
             </div>
-            <h1 className='md:text-2xl text-xl mt-10 '>Linktree Clone</h1>
-            <p className='dark:text-dark-100 text-white-100 mt-3'>Personal website was built originally from scratch using several powerful stacks.</p>
-            <hr className='dark:border-dark-100 border-white-100 border border-dashed my-5 rounded-full' />
+            <h1 className='md:text-2xl text-xl mt-10 '>{Tittle}</h1>
+            <p className='dark:text-dark-100 text-white-100 mt-3'>{Description}.</p>
+            <hr className='dark:border-[#525252] border-white-100 border-1 border border-dashed my-5 rounded-full' />
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>
                     <span>Tech Stack :</span>
@@ -31,11 +35,11 @@ const page = () => {
                         <TailwindLogo/> 
                 </div>
                 <div className='flex items-center gap-2 md:mt-0 mt-5'>
-                    <Link href="https://github.com/ervinarviandi/bubble-cleaner" className='flex items-center gap-3 link link-underline link-underline-black py-3 border-b border-dashed ' target='_blank'>
+                    <Link href="https://github.com/ervinarviandi/bubble-cleaner" className='flex items-center gap-3 link link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed ' target='_blank'>
                         <FaGithub/>
                         Source Code
                     </Link>
-                    <Link href="https://bubble-cleaner-4rq1.vercel.app/" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-b border-dashed' target='_blank'>
+                    <Link href="https://bubble-cleaner-4rq1.vercel.app/" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed' target='_blank'>
                         <HiMiniArrowTopRightOnSquare/>
                         Live Demo
                     </Link>

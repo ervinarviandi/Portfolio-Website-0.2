@@ -7,15 +7,56 @@
 @layer base {
   body {
     @apply dark:bg-backgrounddark ;
-    background-color: #fbfdff;
-
-    /* height: 500vh; */
+    /* background-color: #fbfdff; */
   }
 }
 
+/* .myNavigation {
+  background: url(../public/Bg/glassmorphism/bottom\ small.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+} */
+
 .myHero {
-  background: url(../public/Bg/bgpatern6.webp);
+  /* background: url(../public/Bg/glassmorphism/bg-right-top.svg); */
+  /* background: url(../public/Bg/dimension/Desktop\ -\ 3.svg); */
+  background-repeat: repeat;
+  background-position: center;
 }
+
+
+
+
+/* .featured-card {
+  background: url(../public/Bg/glassmorphism/gray.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.featured-card2 {
+  background: url(../public/Bg/glassmorphism/blue-bottom-right-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.featured-card3 {
+  background: url(../public/Bg/glassmorphism/yellow2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+
+/* Pages BG */
+/* Guestbook */
+.guestbook {
+  background: url(../public/Bg/dimension/Desktop\ -\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Akhir Guestbook */
+
+
+
+
 
 .myScrollbar::-webkit-scrollbar {
   display: none;

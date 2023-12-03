@@ -11,7 +11,7 @@ const Articles_Title = "Latest Articles";
 const articles = () => {
   return (
     <div className='w-full py-10 '>
-        <div className='md:max-w-6xl mx-auto px-5 '>
+        <div className='md:max-w-6xl mx-auto px-10 '>
           <div className='flex justify-between items-center'>
           <h1 className='md:text-3xl text-xl font-bold'>{Articles_Title}</h1>
           <Link href="/" className=' item-center gap-2 md:flex hidden text-sm'>
@@ -23,28 +23,31 @@ const articles = () => {
           <FiArrowRight size={20}/>
           </Link>
           </div>
-          
+          <div className='mt-7'>
+            <h5 className='text-xl font-bold '>Check out my blog</h5>
+            <p className='dark:text-dark-100 text-white-100 lg:text-lg text-md mt-4'>Stay informed about my writing by subscribing to my blog.</p>
+          </div>
             <div className="min-w-[250px] h-max mt-4 border-b-2  border-dark-100 ">
             <div className="flex flex-row h-40 overflow-y-hidden gap-5 my-6 overflow-x-scroll  myScrollbar ">
-              <div className="rounded-lg snap-start  min-w-[260px]  myScrollbar hover:scale-[96%] duration-300 ease-in">
+              <div className="rounded-lg snap-start  min-w-[240px]  myScrollbar hover:scale-[96%] duration-300 ease-in dark:bg-[#1e1e1e] bg-[#fff] p-4">
                 <Image src={Thubnasils1} width={300} height={300} alt='img1'/>
-                <h1 className="font-bold font-Roboto text-blue-600">My Carousel Slider</h1>
+                <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1>
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Image src={Thubnasils2} width={300} height={300}  alt='img2'/>
-                <h1 className="font-bold font-Roboto text-blue-600">My Carousel Slider</h1>
+                <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1>
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]   duration-300 ease-in">
                 <Image src={Thubnasils3} width={300} height={300} alt='img3'/>
-                <h1 className="font-bold font-Roboto text-blue-600">My Carousel Slider</h1>
+                <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1>
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Image src={Thubnasils4} width={300} height={300} alt='img4'/>
-                <h1 className="font-bold font-Roboto text-blue-600">My Carousel Slider</h1>
+                <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1>
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Image src={Thubnasils4} width={300} height={300} alt='img4'/>
-                <h1 className="font-bold font-Roboto text-blue-600">My Carousel Slider</h1>
+                <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1>
               </div>
             </div>
           </div>

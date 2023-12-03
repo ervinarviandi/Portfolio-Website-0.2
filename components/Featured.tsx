@@ -8,12 +8,12 @@ import Logo2 from "@/public/featured/flash-dynamic-gradient.svg"
 
 const Featured = () => {
   return (
-    <div className='w-full py-10'>
-        <div className='lg:max-w-6xl md:max-w-6xl mx-auto px-5 '>
+    <div className='w-full py-10 featured'>
+        <div className='lg:max-w-6xl md:max-w-6xl mx-auto px-10 '>
             <div className='grid md:grid-cols-3 gap-5'>
                 <div className='flex flex-col'>
-                    <div className='dark:bg-[#1e1e1e] bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md'>
-                        <div className='p-2 rounded-full bg-green-200 w-12 h-12 text-yellow-500 relative my-2'>
+                    <div className='dark:bg-[#1e1e1e] backdrop-blur  bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md featured-card'>
+                        <div className='p-2 rounded-full backdrop-blur-md border-2 border-gray-200 w-12 h-12 text-yellow-500 relative my-2'>
                           <Image src={Logo} width={30} height={30} alt='startIconsFeatured'/>
                         </div>
                         <h1 className='text-xl font-bold '>Clean & Intuitive</h1>
@@ -21,7 +21,7 @@ const Featured = () => {
                     </div>
                 </div>
                 <div className='flex flex-col'>
-                    <div className='dark:bg-[#1e1e1e] bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md'>
+                    <div className='dark:bg-[#1e1e1e] backdrop-blur bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md featured-card2'>
                         <div className='p-2 rounded-full bg-amber-200 w-12 h-12 text-rose-500 relative my-2'>
                         <Image src={Logo1} width={30} height={30} alt='startIconsFeatured'/>
                         </div>
@@ -30,7 +30,7 @@ const Featured = () => {
                     </div>
                 </div>
                 <div className='flex flex-col'>
-                    <div className='dark:bg-[#1e1e1e] bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md'>
+                    <div className='dark:bg-[#1e1e1e] backdrop-blur bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md featured-card3'>
                         <div className='p-2 rounded-full bg-indigo-300 w-12 h-12 text-rose-500 relative my-2'>
                         <Image src={Logo2} width={30} height={30} alt='startIconsFeatured'/>
                         </div>

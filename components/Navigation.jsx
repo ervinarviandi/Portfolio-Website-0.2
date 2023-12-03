@@ -1,11 +1,19 @@
 "use client"
 import PopOver from "@/components/commons/PopOver"
 import React from 'react'
+import Logo from "@/public/ervinarviandi.jpg"
 import Link from "next/link"
+import Image from "next/image"
 import { useEffect, useState } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { HiMenu } from "react-icons/hi";
 import { useTheme } from "next-themes"
+import Icons from "@/components/atom/MobileVersion/Icons"
+import { BiHomeSmile } from "react-icons/bi";
+import { BiCommentDetail } from "react-icons/bi";
+import { LiaBlogSolid, LiaBoxSolid  } from "react-icons/lia";
+import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md";
+
 
 
 
@@ -74,12 +82,14 @@ const Navigation = () => {
     };
   return (
     <>
-      <header className="w-full fixed py-4  ease-in duration-300 dark:text-white backdrop-blur-md dark:bg-backgrounddark/70 bg-backgroundlight/70   z-10" >
+      <header className="w-full fixed py-4  ease-in duration-300 dark:text-white backdrop-blur-md dark:bg-backgrounddark/70 bg-backgroundlight/70 myNavigation  z-10" >
         <div className="lg:max-w-7xl mx-auto px-4 flex
          justify-between items-center">
-           <div className="font-bold rounded-xl items-center flex justify-center">
-            Ervin 
-           </div>
+          <div className="flex justify-center gap-2 items-center">
+            <Image src={Logo} width={40} height={40} alt="profileMobile" className="rounded-full"/>
+          <h1 className="font-bold text-lg">Ervin Arviandi</h1>
+            </div>
+          <div></div>
           <div className="flex item-center">
             {/* <h1 className="dark:text-[#fff] text-[#000000] text-xl font-bold">Ervin <span className='text-purple-500 pl-2'>Arvndi</span></h1> */}
             {/* <div className="ml-7">
@@ -142,55 +152,68 @@ const Navigation = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen  backdrop-filter backdrop-blur-lg dark:bg-backgrounddark bg-backgroundlight text-center ease-in duration-300 z-40"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen dark:bg-backgroundark backdrop-filter backdrop-blur-lg text-center ease-in  duration-300 z-40 dark:text-white   "
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 gap-3 items-center w-full h-screen  backdrop-filter backdrop-blur-lg dark:bg-backgrounddark bg-backgroundlight  ease-in duration-300 z-40"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 w-full h-screen dark:bg-backgroundark backdrop-filter backdrop-blur-lg  ease-in   items-center  duration-300 z-40 dark:text-white   "
           }
         >
-          <ul>
-            <li className="p-4 text-2xl    ">
-              <Link href="/" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2 border-dashed border-b  ">
+          
+           
+         <div className="px-10 ">
+          <div className="mt-4 flex justify-between items-center gap-2">
+            <div className="flex justify-center gap-2 items-center">
+            <Image src={Logo} width={40} height={40} alt="profileMobile" className="rounded-full"/>
+          <h1 className="font-bold text-lg">Ervin Arviandi</h1>
+            </div>
+          <div>
+          {renderThemeChanger()}
+          </div>
+          </div>
+          <hr className="border-1 border-solid dark:border-[#525252] border-white-100 my-5" />
+          <ul className="mt-10 ">
+          <li className="p-2 px-4 text-2xl ">
+              <Link href="/" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b  ">
+                <BiHomeSmile size={20}/>
                 Home
               </Link>
             </li>
-            
-            <li className="p-4 text-2xl   "> 
-              <Link href="/portfolio" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+          <li className="p-2 px-4 text-2xl    ">
+              <Link href="/portfolio" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b  ">
+                <LiaBoxSolid size={20} />
                 Project
               </Link>
             </li>
-           
-            <li className="p-4 text-2xl    ">
-              <Link href="/guestbook" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+            <li className="p-2 px-4 text-2xl    ">
+              <Link href="/guestbook" className="flex items-center gap-2 text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b">
+              <BiCommentDetail size={20}/>
                 Guestbook
               </Link>
             </li>
-           
-            {/* <li className="p-4 text-2xl   ">
-              <Link href="/studio" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
-                Studio
-              </Link>
-            </li> */}
-           
-            <li className="p-4 text-2xl   ">
-              <Link href="/contact" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+            <li className="p-2 px-4 text-2xl   ">
+              <Link href="/contact" className="flex items-center gap-2 text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b">
+                <MdOutlineContactless size={20}/>
                 Contact
               </Link>
             </li>
-            <li className="p-4 text-2xl   ">
-              <Link href="/myBlog" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+            <li className="p-2 px-4 text-2xl   ">
+              <Link href="/myBlog" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b">
+              <LiaBlogSolid size={20} />
                 Blog
               </Link>
             </li>
-            <li className="p-4 text-2xl   ">
-              <Link href="/dashboard" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 border-dashed border-b">
+            <li className="p-2 px-4 text-2xl   ">
+              <Link href="/dashboard" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b">
+                <MdOutlineDashboard size={20} />
                 Dashboard
               </Link>
             </li>
-           
           </ul>
+        <div className="">
+          <Icons/>
+        </div>
         </div>
           </div>
-         </div>
+        </div>
+          </div>
       </header>
     </>
   )
