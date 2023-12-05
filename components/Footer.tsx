@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='md:max-w-6xl mx-auto lg:px-10 px-5'>
             <div className='md:flex '>
                 <div className='md:w-5/12  '> 
-                <p className='font-bold lg:text-xl text-md'>🤝 Let's get in touch</p>
+                <p className='font-bold lg:text-xl text-md'>🤝 Let&apos;s get in touch</p>
                         <h4 className='lg:text-lg text-md md:mt-0 my-4 dark:text-dark-100 text-white-100'>Suka kopi, mau ngopi bareng?
                         <br /> Have any project ideas?
                         Ask something?</h4>
@@ -49,8 +49,8 @@ const Footer = () => {
             <div className='flex items-center justify-between my-5'>
                 <div className='flex justify-center text-center items-center gap-3'>
                     <span className='relative flex h-3 w-3'>
-                        <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a78bfa] opacity-75'></span>
-                        <span className='relative inline-flex rounded-full h-3 w-3 bg-[#a78bfa]'></span>
+                        <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-300 opacity-75'></span>
+                        <span className='relative inline-flex rounded-full h-3 w-3 bg-lime-300'></span>
                     </span>
                     <p className='text-sm dark:text-dark-100 text-white-100 '>© 2024 by ervin arviandi</p>
                 </div>
