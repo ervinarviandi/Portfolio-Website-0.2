@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { HiMenu } from "react-icons/hi";
 import { useTheme } from "next-themes"
-import Icons from "@/components/atom/MobileVersion/Icons"
 import { BiHomeSmile } from "react-icons/bi";
 import { BiCommentDetail } from "react-icons/bi";
 import { LiaBlogSolid, LiaBoxSolid  } from "react-icons/lia";
@@ -86,7 +85,7 @@ const Navigation = () => {
         <div className="lg:max-w-7xl mx-auto px-4 flex
          justify-between items-center">
           <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={40} height={40} alt="profileMobile" className="rounded-full"/>
+            <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           <div></div>
@@ -108,10 +107,6 @@ const Navigation = () => {
               <Link href="/guestbook" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Guestbook
               </Link>
               </li>
-              {/* <li>
-              <Link href="/studio" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Studio
-              </Link>
-              </li> */}
               <li>
               <Link href="/contact" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Contact
               </Link>
@@ -161,7 +156,7 @@ const Navigation = () => {
          <div className="px-10 ">
           <div className="mt-4 flex justify-between items-center gap-2">
             <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={40} height={40} alt="profileMobile" className="rounded-full"/>
+            <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           <div>
@@ -206,10 +201,10 @@ const Navigation = () => {
                 Dashboard
               </Link>
             </li>
-          </ul>
-        <div className="">
+        {/* <div className="">
           <Icons/>
-        </div>
+        </div> */}
+          </ul>
         </div>
           </div>
         </div>

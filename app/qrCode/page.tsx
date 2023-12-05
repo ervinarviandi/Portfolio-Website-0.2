@@ -16,7 +16,7 @@ const page = () => {
     <>
     <Navigation/>
     <div className='w-full py-10 pt-[96px]'>
-        <div className="md:max-w-7xl mx-auto px-10 ">
+        <div className="md:max-w-7xl mx-auto lg:px-10 px-5 ">
             <div className='flex items-center gap-2'>
             <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100  dark:hover:text-[#fff] hover:text-[#000]'>
                 <BsArrowLeftCircleFill/>

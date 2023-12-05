@@ -1,18 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
-import ViteLogo from '@/components/Tech Stack/icons small/ViteLogo'
-import ReactLogo from '@/components/Tech Stack/icons small/ReactLogo'
-import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
-import ImageCard from "@/app/bubbleCleaner/components/ImageCard"
+import ImageCard from "@/app/bookshelf/components/ImageCard"
 import "../../app/globals.css"
+import CodeigniterLogo from '@/components/Tech Stack/icons small/CodeigniterLogo'
+import BootstrapLogo from '@/components/Tech Stack/icons small/BootstrapLogo'
 
 
-const Tittle = "Bubble Cleaner"
-const Description = "Personal website was built originally from scratch using several powerful stacks."
+const Tittle = "Bookshelf Apps"
+const Description = "A bookshelf app that can show, search, add, delete, update book and move book to other shelf."
 
 const page = () => {
   return (
@@ -32,16 +31,15 @@ const page = () => {
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>
                     <span>Tech Stack :</span>
-                        <ReactLogo/>
-                        <TailwindLogo/> 
-                        <ViteLogo/>
+                        <CodeigniterLogo/>
+                        <BootstrapLogo/> 
                 </div>
                 <div className='flex items-center gap-2 md:mt-0 mt-5'>
-                    <Link href="https://github.com/ervinarviandi/bubble-cleaner" className='flex items-center gap-3 link link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed ' target='_blank'>
+                    <Link href="https://github.com/ervinarviandi/Bookself" className='flex items-center gap-3 link link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed ' target='_blank'>
                         <FaGithub/>
                         Source Code
                     </Link>
-                    <Link href="https://bubble-cleaner-4rq1.vercel.app/" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed' target='_blank'>
+                    <Link href="/studio" className='flex items-center gap-2  px-2 link-underline link-underline-black py-3 border-1 dark:border-[#525252] border-white-100 border-b border-dashed' target='_blank'>
                         <HiMiniArrowTopRightOnSquare/>
                         Live Demo
                     </Link>

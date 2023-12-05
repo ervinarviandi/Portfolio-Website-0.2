@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Table = () => {
   return (
-    <div className='my-7'>
+    <div className='my-7 px-5'>
          <table className="table-auto  md:table-fixed 
                   border border-solid border-1 dark:border-[#525252] border-white-100 rounded-2xl ">
                     <thead className='border rounded-2xl  border-solid border-1 dark:border-[#525252] border-white-100 '>

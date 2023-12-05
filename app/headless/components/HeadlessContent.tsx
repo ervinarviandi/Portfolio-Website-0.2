@@ -11,7 +11,7 @@ const HeadlessContent = () => {
   return (
     <div>
           <p className='text-md text-center text-dark-100'>Web Development</p>
-        <h1 className='text-center font-bold lg:text-3xl text-2xl my-4 '>Install / Implemetasi Headless UI <br /> di dalam Project Next JS</h1>
+        <h1 className='text-center font-bold lg:text-3xl text-2xl my-4 '>Install / Implementasi Headless UI <br /> di dalam Project Next JS</h1>
           <div className='my-3 flex justify-between items-center'>
           <div className='flex items-center gap-2'>
           <div className='flex items-center gap-2 md:text-md text-xs'>

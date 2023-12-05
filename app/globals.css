@@ -89,7 +89,7 @@
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#60a5fa, #60a5fa)
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#c4b5fd, #a855f7, #67e8f9 )
 }
 
 .link-underline:hover {
