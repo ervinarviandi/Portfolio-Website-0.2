@@ -55,7 +55,7 @@ const Navigation = () => {
       const currentTheme = theme === "system" ? systemTheme : theme;
       if (currentTheme === "dark") {
         return (
-          <button className=" p-2 rounded-full" onClick={() => setTheme("light")}>
+          <button className=" p-2 rounded-full" id="button" aria-label="button" onClick={() => setTheme("light")}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#facc15" viewBox="0 0 24 24" strokeWidth="2" stroke="#facc15" className="w-5 h-5">
               <path
                 strokeLinecap="round"
@@ -67,7 +67,7 @@ const Navigation = () => {
         );
       } else {
         return (
-          <button className=" p-2 rounded-full " onClick={() => setTheme("dark")}>
+          <button className=" p-2 rounded-full " id="button" aria-label="button" onClick={() => setTheme("dark")}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#0284c7" viewBox="0 0 24 24" strokeWidth="0" stroke="currentColor" className="w-5 h-5">
               <path
                 strokeLinecap="round"
@@ -88,12 +88,9 @@ const Navigation = () => {
             <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
-          <div></div>
+          
           <div className="flex item-center">
-            {/* <h1 className="dark:text-[#fff] text-[#000000] text-xl font-bold">Ervin <span className='text-purple-500 pl-2'>Arvndi</span></h1> */}
-            {/* <div className="ml-7">
-              <PopOver/>
-            </div> */}
+           
             <ul className="ml-5 items-center gap-3 hidden lg:flex ">
               <li>
               <Link href="/" className="text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm">Home
@@ -124,7 +121,9 @@ const Navigation = () => {
           <div>
          
             <div className="flex justify-center items-center gap-2">
+              <div className="lg:block hidden">
             {renderThemeChanger()}
+              </div>
 
           <div onClick={handleNav} className=" z-50 dark: lg:hidden block ">
             {nav ? (
@@ -159,7 +158,7 @@ const Navigation = () => {
             <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
-          <div>
+          <div className="">
           {renderThemeChanger()}
           </div>
           </div>
