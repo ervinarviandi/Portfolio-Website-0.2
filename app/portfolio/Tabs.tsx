@@ -15,6 +15,15 @@ import ReactLogo from '@/components/Tech Stack/icons small/ReactLogo'
 import CodeigniterLogo from '@/components/Tech Stack/icons small/CodeigniterLogo'
 import BootstrapLogo from '@/components/Tech Stack/icons small/BootstrapLogo'
 import ViteLogo from '@/components/Tech Stack/icons small/ViteLogo'
+import Karya from "@/app/Assets/Photoshop/juglr land 3.webp"
+import Karya1 from "@/app/Assets/Photoshop/croosocean.webp"
+import Karya2 from "@/app/Assets/Photoshop/the last soldier.webp"
+import Karya3 from "@/app/Assets/Photoshop/erfan.webp"
+import Karya4 from "@/app/Assets/Photoshop/dheni patungka.webp"
+import Karya5 from "@/app/Assets/Photoshop/reza arap.webp"
+import Karya6 from "@/app/Assets/Photoshop/Microworlds 1.webp"
+import Karya7 from "@/app/Assets/Photoshop/Microworlds.webp"
+
 
 
 
@@ -34,7 +43,7 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 font-poppins bg-[#1e1e1e] ",
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 font-poppins dark:bg-[#1e1e1e] bg-[#fff]  hover:text-[#bef264] shadow-lg ",
                     selected ? "dark:bg-[#1e1e1e]  text-white " : "dark:text-gradient200  text-gradient200"
                   )
                 }
@@ -44,8 +53,8 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 font-poppins bg-[#1e1e1e] ",
-                    selected ? "dark:bg-[#1e1e1e] text-white " : "dark:text-gradient200  text-gradient200"
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 hover:text-[#bef264] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg ",
+                    selected ? " dark:bg-[#1e1e1e] " : "hover:text-[#bef264] dark:bg-[#1e1e1e] "
                   )
                 }
               >
@@ -54,8 +63,8 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 dark:bg-[#1e1e1e] bg-[] font-poppins",
-                    selected ? "dark:bg-[#1e1e1e] text-white " : "dark:text-gradient200 text-gradient200 "
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5  hover:text-[#bef264] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg",
+                    selected ? " text-[#fff] " : "hover:text-[#bef264] dark:bg-[#1e1e1e] "
                   )
                 }
               >
@@ -178,8 +187,34 @@ export default function Example() {
                 
               </Tab.Panel>
               <Tab.Panel className="rounded-xl dark:bg-backgrounddark p-3 dark:text-white text-gray-700 ">
-                <div className="grid md:grid-cols-2 gap-2">
-                  
+                <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+                  <div className='flex flex-col'>
+                    <Image src={Karya} width={400} height={400} alt='TheJunggleBook'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya1} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya2} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya3} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya4} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya5} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya6} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  <div className='flex flex-col'>
+                    <Image src={Karya7} width={400} height={400} alt='CrossTheOcean'/>
+                  </div>
+                  {/* <div className='flex flex-col'>
+                    <Image src={Karya8} width={400} height={400} alt='CrossTheOcean'/>
+                  </div> */}
                 </div>
               </Tab.Panel>
             </Tab.Panels>

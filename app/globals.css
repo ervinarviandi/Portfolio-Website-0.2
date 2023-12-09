@@ -89,13 +89,12 @@
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#c4b5fd, #a855f7, #67e8f9 )
+  background-image: linear-gradient(transparent, transparent), linear-gradient( to right , #22d3ee, #bef264, #defaae   )
 }
 
 .link-underline:hover {
   background-size: 100% 3px;
   background-position: 0 100%;
- 
 }
 
  @keyframes rainArrow {

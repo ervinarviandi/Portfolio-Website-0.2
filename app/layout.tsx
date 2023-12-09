@@ -38,6 +38,7 @@ export default function RootLayout({
           shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
         /> 
         {children}
+        <script id="dsq-count-scr" src="//ervinarviandi.disqus.com/count.js" async></script>
         </Providers>
       </body>
     </html>
