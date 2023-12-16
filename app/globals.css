@@ -18,10 +18,9 @@
 } */
 
 .myHero {
-  /* background: url(../public/Bg/glassmorphism/bg-right-top.svg); */
-  /* background: url(../public/Bg/dimension/Desktop\ -\ 3.svg); */
-  background-repeat: repeat;
-  background-position: center;
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat;
+  /* background-position: right; */
 }
 
 
@@ -48,9 +47,8 @@
 /* Pages BG */
 /* Guestbook */
 .guestbook {
-  background: url(../public/Bg/dimension/Desktop\ -\ 3.svg);
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
   background-repeat: no-repeat;
-  background-position: center;
 }
 /* Akhir Guestbook */
 
@@ -64,18 +62,36 @@
 
 
 .MyGuestbook {
-  background: url(../public/Bg/paterrn/batthern.png);
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat;
+
 }
-
-
 /* .myHero h1 .vin {
   background: url(../public/shape/header-shape.32875466.png);
   background-repeat: repeat;
   background-size: cover;
 } */
 
+.MyPortfolio {
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat ;
+}
+
 .contact {
-  background: url(../public/Bg/bgpatern7.webp);
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat;
+}
+
+
+.MyBlog {
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat;
+}
+
+
+.MyDashboard {
+  background: url(../app/Assets/background/Ellipse\ 8.svg);
+  background-repeat: no-repeat;
 }
 
 .link-underline {

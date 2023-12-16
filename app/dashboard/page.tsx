@@ -4,7 +4,6 @@ import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
 import { FaGithub } from "react-icons/fa";
 import Link from 'next/link';
-// import ThemeInput from ""; 
 
 const page = () => {
 
@@ -16,7 +15,7 @@ const page = () => {
   return (
     <>
     <Navigation/>
-    <div className='w-full pt-20'>
+    <div className='w-full pt-20 MyDashboard'>
         <div className='md:max-w-7xl  mx-auto lg:px-10 px-5'>
         <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff] mt-4'>Dashboard</h1>
         <p className='md:text-lg text-sm dark:text-dark-100 text-white-100 mt-4'>My contributions from last year on github.</p>

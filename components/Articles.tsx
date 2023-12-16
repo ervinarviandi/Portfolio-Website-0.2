@@ -1,4 +1,8 @@
-import React from 'react'
+
+"use client"
+
+import React  from 'react'
+import { useState } from 'react';
 import Link from 'next/link'
 import { FiArrowRight } from "react-icons/fi";
 import Image from 'next/image';
@@ -7,7 +11,15 @@ import Thubnasils3 from "../public/Blog/Headless ui.png"
 import Thubnasils4 from "../public/Blog/Next js tailwind.png"
 
 const Articles_Title = "Latest Articles";
+
+
 const articles = () => {
+  
+  const [isLoading, setLoading] = useState(true);
+
+
+
+
   return (
     <div className='w-full py-10 '>
         <div className='md:max-w-6xl mx-auto lg:px-10 px-5 '>
@@ -30,25 +42,55 @@ const articles = () => {
             <div className="flex flex-row h-40 overflow-y-hidden gap-5 my-6 overflow-x-scroll  myScrollbar ">
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Link href="/astroBlog">
-                <Image src={Thubnasils2} width={300} height={300}  alt='astroblogThumbanails' className='rounded-md'/>
+                <Image src={Thubnasils2} width={300} height={300}  alt='astroblogThumbanails' 
+                className={`
+                duration-700 ease-in-out group-hover:opacity-75 rounded-md
+                ${
+                  isLoading
+                    ? "scale-110 blur-2xl grayscale"
+                    : "scale-100 blur-0 grayscale-0"
+                })`}
+            onLoadingComplete={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]   duration-300 ease-in">
                 <Link href="/headless">
-                <Image src={Thubnasils3} width={300} height={300} alt='img3' className='rounded-md'/>
+                <Image src={Thubnasils3} width={300} height={300} alt='img3' 
+                className={`
+                duration-700 ease-in-out group-hover:opacity-75 rounded-md
+                ${
+                  isLoading
+                    ? "scale-110 blur-2xl grayscale"
+                    : "scale-100 blur-0 grayscale-0"
+                })`}
+            onLoadingComplete={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Link href="/nextjsBlog">
-                <Image src={Thubnasils4} width={300} height={300} alt='img4' className='rounded-md'/>
+                <Image src={Thubnasils4} width={300} height={300} alt='img4' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-md
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Link href="/studio">
-                <Image src={Thubnasils4} width={300} height={300} alt='img4' className='rounded-md'/>
+                <Image src={Thubnasils4} width={300} height={300} alt='img4' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-md
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>

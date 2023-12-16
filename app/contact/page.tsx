@@ -11,7 +11,14 @@ import Logo2 from "@/app/Assets/Icons/Gmail.svg"
 import Logo3 from "@/app/Assets/Icons/500 Px.svg"
 
 
+
+
+
+
 const contact = () => {
+
+  
+  
   return (
     <>
     <div>
@@ -57,8 +64,7 @@ const contact = () => {
                 to see location
                 </span>
                 </h4>
-            
-             
+
             </div>
         </div>
     </div>

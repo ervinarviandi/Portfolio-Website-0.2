@@ -1,6 +1,6 @@
 "use client"
-import PopOver from "@/components/commons/PopOver"
 import React from 'react'
+import PopOver from "@/components/commons/PopOver"
 import Logo from "@/public/ervinarviandi.jpg"
 import Link from "next/link"
 import Image from "next/image"
@@ -16,7 +16,14 @@ import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md";
 
 
 
+
+
+
+
 const Navigation = () => {  
+
+    const [isLoading, setLoading] =useState(true); 
+
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState("transparent");
     const [textColor, setTextColor] = useState("transparent");
@@ -85,7 +92,14 @@ const Navigation = () => {
         <div className="lg:max-w-7xl mx-auto px-4 flex
          justify-between items-center">
           <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
+            <Image src={Logo} width={30} height={30} alt="profileMobile"  className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-full
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           
@@ -155,7 +169,14 @@ const Navigation = () => {
          <div className="px-10 ">
           <div className="mt-4 flex justify-between items-center gap-2">
             <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={30} height={30} alt="profileMobile" className="rounded-full"/>
+            <Image src={Logo} width={30} height={30} alt="profileMobile"  className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-full
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           <div className="">

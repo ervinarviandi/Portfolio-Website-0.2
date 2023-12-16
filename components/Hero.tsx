@@ -1,10 +1,9 @@
  "use client"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import React from 'react'
 import Image from 'next/image'
 import Logo from "../public/ervinarviandi.jpg"
 import Hands from "../public/image.webp"
-import { CgFileDocument } from "react-icons/cg";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { PiArrowFatDownFill } from "react-icons/pi";
@@ -12,7 +11,8 @@ import { PiArrowFatDownFill } from "react-icons/pi";
 
 
 const Hero = () => {
-
+  const [isLoading, setLoading] = useState(true);
+  
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -23,7 +23,14 @@ const Hero = () => {
   return (
     <div className='h-screen w-full  pt-[96px] myHero'data-aos="fade-up">
         <div className='md:max-w-6xl mx-auto lg:px-10 px-5'>
-          <Image src={Logo} alt="mobileImage" className='md:hidden block' width={160} height={160} priority={true}/>
+          <Image src={Logo} alt="mobileImage"  width={160} height={160}  className={`
+              duration-700 ease-in-out group-hover:opacity-75 md:hidden block
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)} priority={true}/>
             <div className='grid md:grid-cols-2 mt-16 mx-auto '>
                 <div className='flex flex-col'>
                     <div className='flex items-center gap-2'>
@@ -45,7 +52,15 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col'>
                     <div className='md:block hidden flex-end'>
-                    <Image src={Logo} width={350} height={350} alt="Profile" priority={true} placeholder='blur'  />
+                    <Image src={Logo} width={350} height={350} alt="Profile" priority={true} placeholder='blur'  className={`
+              duration-700 ease-in-out group-hover:opacity-75
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}
+        /> 
                     </div>
                 </div>
             </div>

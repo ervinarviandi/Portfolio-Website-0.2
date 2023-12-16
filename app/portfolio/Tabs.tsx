@@ -36,6 +36,9 @@ function classNames(...classes:any) {
 export default function Example() {
  
 
+  const [isLoading, setLoading] = useState(true);
+
+
   return (
     <div className="w-full  mx-auto py-16 sm:px-0">
       <Tab.Group manual>
@@ -81,7 +84,14 @@ export default function Example() {
                             < TiPin className="text-black"/>
                             <p className='text-sm text-black'>Featured</p>
                         </div>
-                        <Image src={Projects1} width={500} height={500} alt='QrCode' className='rounded-t-lg '/>
+                        <Image src={Projects1} width={500} height={500} alt='QrCode'  className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-t-lg
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/qrCode" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -108,7 +118,14 @@ export default function Example() {
                             < TiPin className="text-black"/>
                             <p className='text-sm text-black'>Featured</p>
                         </div>
-                        <Image src={Logo2} width={500} height={500} alt='QrCode' className='rounded-t-lg '/>
+                        <Image src={Logo2} width={500} height={500} alt='QrCode' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-t-lg
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/linktreeClone" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -132,7 +149,14 @@ export default function Example() {
                             < TiPin className="text-black"/>
                             <p className='text-sm text-black'>Featured</p>
                         </div>
-                        <Image src={Logo3} width={500} height={500} alt='QrCode' className='rounded-t-lg '/>
+                        <Image src={Logo3} width={500} height={500} alt='QrCode' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-t-lg
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/bubbleCleaner" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -157,7 +181,14 @@ export default function Example() {
                             < TiPin className="text-black"/>
                             <p className='text-sm text-black'>Featured</p>
                         </div>
-                        <Image src={Logo4} width={500} height={500} alt='QrCode' className='rounded-t-lg '/>
+                        <Image src={Logo4} width={500} height={500} alt='QrCode' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-t-lg
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoadingComplete={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/bookshelf" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -189,28 +220,28 @@ export default function Example() {
               <Tab.Panel className="rounded-xl dark:bg-backgrounddark p-3 dark:text-white text-gray-700 ">
                 <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
                   <div className='flex flex-col'>
-                    <Image src={Karya} width={400} height={400} alt='TheJunggleBook'/>
+                    <Image src={Karya} width={400} height={400} alt='TheJunggleBook' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya1} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya1} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya2} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya2} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya3} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya3} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya4} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya4} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya5} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya5} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya6} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya6} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya7} width={400} height={400} alt='CrossTheOcean'/>
+                    <Image src={Karya7} width={400} height={400} alt='CrossTheOcean' />
                   </div>
                   {/* <div className='flex flex-col'>
                     <Image src={Karya8} width={400} height={400} alt='CrossTheOcean'/>
