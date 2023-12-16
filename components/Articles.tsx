@@ -13,7 +13,7 @@ import Thubnasils4 from "../public/Blog/Next js tailwind.png"
 const Articles_Title = "Latest Articles";
 
 
-const articles = () => {
+const Articles = () => {
   
   const [isLoading, setLoading] = useState(true);
 
@@ -101,4 +101,4 @@ const articles = () => {
   )
 }
 
-export default articles
+export default Articles
