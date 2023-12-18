@@ -8,9 +8,10 @@ import Link from 'next/link'
 import { BsArrowLeftCircleFill } from 'react-icons/bs'
 
 
-const page = () => {
+const Page = () => {
 
-  const [isLoading, setLoading] = useState(true)
+  const [isLoading, setLoading] = useState(true);
+
   return (
     <>
     <Navigation/>
@@ -44,7 +45,7 @@ const page = () => {
           onLoad={() => setLoading(false)} src={Profile} width={250} height={250} alt='ProfileAbout'/>
             </div>
           </div>
-            <p className='mt-5 text-md  '>Hello👋, My name is Moh Ervin Arviandi , or you can call me Ervin. I focus on studying web application development and web design. The main programming language I'm exploring is Javascript, as well as the React framework (and the environment in general). I love learning 📚 things, and always want to learn new things. I am enthusiastic, reliable, responsible 📱 and hardworking person.</p>
+            <p className='mt-5 text-md  '>Hello👋, My name is Moh Ervin Arviandi , or you can call me Ervin. I focus on studying web application development and web design. The main programming language I&apos;m exploring is Javascript, as well as the React framework (and the environment in general). I love learning 📚 things, and always want to learn new things. I am enthusiastic, reliable, responsible 📱 and hardworking person.</p>
 
             <p className='mt-5'>I&apos;am passionate about <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text '> Frontend Developer </span> and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮</p>
 
@@ -54,7 +55,7 @@ const page = () => {
             <p className='dark:text-dark-100 text-white-100 text-md mt-3'>I want to live a life that goes beyond mere existence. I dedicate myself to being beneficial.</p>
 
             <div className='my-5 border-l-2  border-[#22d3ee] p-4 md:w-6/12'>
-            <p className='text-md italic dark:text-dark-100 text-white-100 '>Again, you can&apos;t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life. - <span className='font-bold'> Steve Jobs</span>
+            <p className='text-md italic dark:text-dark-100 text-white-100 '>Again, you can&apos;t connect the dots looking forward&#59; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something &#45; your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life. &#45; <span className='font-bold'> Steve Jobs</span>
               </p>
             </div>
 
@@ -65,4 +66,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

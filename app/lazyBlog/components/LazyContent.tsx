@@ -6,6 +6,9 @@ import Image from 'next/image'
 import Code from "@/app/Assets/CodeImage/codeimage-snippet_17.svg"
 import Code2 from "@/app/Assets/CodeImage/codeimage-snippetsss.svg"
 
+
+const content = "'../components/BlurImage'"
+
 const LazyContent = () => {
   return (
     <div>
@@ -51,10 +54,10 @@ const LazyContent = () => {
 
           <p className='mt-5 text-md'>langkah 3: Mengimpor Komponen Gambar Buram</p>
 
-          <p className='text-md mt-5'>Import component,</p>
+          <p className='text-md mt-5'>Import component</p>
 
           <div className='mt-5 p-2 rounded-lg bg-[#282a36] md:w-8/12 overflow-hidden'>
-            <p className='md:text-md text-xs '> <span className='text-[#ff79c6]'> import </span> <span> BlurImage</span> <span className='text-[#50fa70]'> from </span> <span className='text-[#f1fa87]'> '../components/BlurImage'</span></p>
+            <p className='md:text-md text-xs '> <span className='text-[#ff79c6]'> import </span> <span> BlurImage</span> <span className='text-[#50fa70]'> from </span> <span className='text-[#f1fa87]'>{content}</span></p>
           </div>
 
           <p className='mt-5'>Tambahkan Component di dalam halaman</p>
