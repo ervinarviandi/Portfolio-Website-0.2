@@ -46,7 +46,7 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 font-poppins dark:bg-[#1e1e1e] bg-[#fff]  hover:text-[#bef264] shadow-lg ",
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 text-gradient100 font-poppins dark:bg-[#1e1e1e] bg-[#fff]  hover:text-[#2bccb8] shadow-lg ",
                     selected ? "dark:bg-[#1e1e1e]  text-white " : "dark:text-gradient200  text-gradient200"
                   )
                 }
@@ -56,8 +56,8 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 hover:text-[#bef264] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg ",
-                    selected ? " dark:bg-[#1e1e1e] " : "hover:text-[#bef264] dark:bg-[#1e1e1e] "
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5 hover:text-[#2bccb8] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg ",
+                    selected ? " dark:bg-[#1e1e1e] " : "hover:text-[#2bccb8] dark:bg-[#1e1e1e] "
                   )
                 }
               >
@@ -66,8 +66,8 @@ export default function Example() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5  hover:text-[#bef264] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg",
-                    selected ? " text-[#fff] " : "hover:text-[#bef264] dark:bg-[#1e1e1e] "
+                    "w-full rounded-full transition  duration-700 ease-in-out delay-50 py-2.5 text-sm font-medium leading-5  hover:text-[#2bccb8] dark:bg-[#1e1e1e] bg-[#fff] shadow-lg",
+                    selected ? " text-[#fff] " : "hover:text-[#2bccb8] dark:bg-[#1e1e1e] "
                   )
                 }
               >
@@ -91,7 +91,7 @@ export default function Example() {
                   ? "scale-110 blur-2xl grayscale"
                   : "scale-100 blur-0 grayscale-0"
               })`}
-          onLoadingComplete={() => setLoading(false)}/>
+          onLoad={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/qrCode" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -125,7 +125,7 @@ export default function Example() {
                   ? "scale-110 blur-2xl grayscale"
                   : "scale-100 blur-0 grayscale-0"
               })`}
-          onLoadingComplete={() => setLoading(false)}/>
+          onLoad={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/linktreeClone" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -156,7 +156,7 @@ export default function Example() {
                   ? "scale-110 blur-2xl grayscale"
                   : "scale-100 blur-0 grayscale-0"
               })`}
-          onLoadingComplete={() => setLoading(false)}/>
+          onLoad={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/bubbleCleaner" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -188,7 +188,7 @@ export default function Example() {
                   ? "scale-110 blur-2xl grayscale"
                   : "scale-100 blur-0 grayscale-0"
               })`}
-          onLoadingComplete={() => setLoading(false)}/>
+          onLoad={() => setLoading(false)}/>
                         <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
                             <Link href="/bookshelf" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
                             <FaArrowRight/>
@@ -220,28 +220,84 @@ export default function Example() {
               <Tab.Panel className="rounded-xl dark:bg-backgrounddark p-3 dark:text-white text-gray-700 ">
                 <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
                   <div className='flex flex-col'>
-                    <Image src={Karya} width={400} height={400} alt='TheJunggleBook' />
+                    <Image src={Karya} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='TheJunggleBook' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya1} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya1} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya2} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya2} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya3} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya3} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya4} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya4} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya5} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya5} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya6} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya6} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   <div className='flex flex-col'>
-                    <Image src={Karya7} width={400} height={400} alt='CrossTheOcean' />
+                    <Image src={Karya7} width={400} height={400} className={`
+              duration-700 ease-in-out group-hover:opacity-75 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}  alt='CrossTheOcean' />
                   </div>
                   {/* <div className='flex flex-col'>
                     <Image src={Karya8} width={400} height={400} alt='CrossTheOcean'/>

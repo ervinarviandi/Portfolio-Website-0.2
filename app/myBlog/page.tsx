@@ -45,6 +45,15 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+                    <div className='flex flex-col'>
+                      <div className='p-4 dark:bg-[#1e1e1e] bg-[#fff] rounded-lg border dark:border-[#525252] border-white-100'>
+                        <Link href="/lazyBlog" className='font-bold dark:text-[#fff] text-[#000]'>Membuat Lazy Load Image dengan Efek blur</Link>
+                        <div className='flex items-center text-white-100 dark:text-dark-100 mt-3 '>
+                          <FaRegCalendarAlt />
+                          <span className='text-xs ml-2'>Minggu, 17 Desember 2023</span>
+                        </div>
+                      </div>
+                    </div>
                 </div>
         </div>
     </div>

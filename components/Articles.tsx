@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Thubnasils2 from "../public/Blog/astroBlog.png"
 import Thubnasils3 from "../public/Blog/Headless ui.png"
 import Thubnasils4 from "../public/Blog/Next js tailwind.png"
+import Thubnasils5 from "../public/Blog/lazyload.png"
 
 const Articles_Title = "Latest Articles";
 
@@ -50,7 +51,7 @@ const Articles = () => {
                     ? "scale-110 blur-2xl grayscale"
                     : "scale-100 blur-0 grayscale-0"
                 })`}
-            onLoadingComplete={() => setLoading(false)}/>
+            onLoad={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>
@@ -64,23 +65,11 @@ const Articles = () => {
                     ? "scale-110 blur-2xl grayscale"
                     : "scale-100 blur-0 grayscale-0"
                 })`}
-            onLoadingComplete={() => setLoading(false)}/>
+            onLoad={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>
-              <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
-                <Link href="/nextjsBlog">
-                <Image src={Thubnasils4} width={300} height={300} alt='img4' className={`
-              duration-700 ease-in-out group-hover:opacity-75 rounded-md
-              ${
-                isLoading
-                  ? "scale-110 blur-2xl grayscale"
-                  : "scale-100 blur-0 grayscale-0"
-              })`}
-          onLoadingComplete={() => setLoading(false)}/>
-                </Link>
-                {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
-              </div>
+             
               <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
                 <Link href="/studio">
                 <Image src={Thubnasils4} width={300} height={300} alt='img4' className={`
@@ -90,7 +79,20 @@ const Articles = () => {
                   ? "scale-110 blur-2xl grayscale"
                   : "scale-100 blur-0 grayscale-0"
               })`}
-          onLoadingComplete={() => setLoading(false)}/>
+          onLoad={() => setLoading(false)}/>
+                </Link>
+                {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
+              </div>
+              <div className="rounded-lg snap-start  min-w-[260px] min-h-[100px] hover:scale-[96%]  duration-300 ease-in ">
+                <Link href="/lazyBlog">
+                <Image src={Thubnasils5} width={300} height={300} alt='img5' className={`
+              duration-700 ease-in-out group-hover:opacity-75 rounded-md
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}/>
                 </Link>
                 {/* <h1 className="font-bold font-Roboto dark:text-[#525252] text-white-100">My Carousel Slider</h1> */}
               </div>

@@ -14,12 +14,6 @@ import { LiaBlogSolid, LiaBoxSolid  } from "react-icons/lia";
 import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md";
 
 
-
-
-
-
-
-
 const Navigation = () => {  
 
     const [isLoading, setLoading] =useState(true); 
@@ -92,14 +86,7 @@ const Navigation = () => {
         <div className="lg:max-w-7xl mx-auto px-4 flex
          justify-between items-center">
           <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={30} height={30} alt="profileMobile"  className={`
-              duration-700 ease-in-out group-hover:opacity-75 rounded-full
-              ${
-                isLoading
-                  ? "scale-110 blur-2xl grayscale"
-                  : "scale-100 blur-0 grayscale-0"
-              })`}
-          onLoadingComplete={() => setLoading(false)}/>
+            <Image src={Logo} width={30} height={30} className='rounded-full' alt="profileMobile"  />
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           
@@ -169,14 +156,7 @@ const Navigation = () => {
          <div className="px-10 ">
           <div className="mt-4 flex justify-between items-center gap-2">
             <div className="flex justify-center gap-2 items-center">
-            <Image src={Logo} width={30} height={30} alt="profileMobile"  className={`
-              duration-700 ease-in-out group-hover:opacity-75 rounded-full
-              ${
-                isLoading
-                  ? "scale-110 blur-2xl grayscale"
-                  : "scale-100 blur-0 grayscale-0"
-              })`}
-          onLoadingComplete={() => setLoading(false)}/>
+            <Image src={Logo} width={30} height={30} className='rounded-full' alt="profileMobile"/>  
           <h1 className="font-bold text-lg">Ervin Arviandi</h1>
             </div>
           <div className="">

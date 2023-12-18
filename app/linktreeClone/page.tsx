@@ -9,6 +9,8 @@ import { BsArrowLeftCircleFill } from "react-icons/bs";
 import ImageCard from "@/app/linktreeClone/components/ImageCard"
 import "../../app/globals.css"
 
+
+
 const page = () => {
   return (
     <>

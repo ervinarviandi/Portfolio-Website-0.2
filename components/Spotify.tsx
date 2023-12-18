@@ -15,9 +15,8 @@ const Spotify = () => {
             <span className="text-xs text-[#000]">Playing Now......</span>
             </Link>
             <div className='w-7/12'>
-            <Marquee loop={0} className='text-xs text[#fff]'>karena ada maintanance pada spotify for developer, untuk sementara hanya bisa untuk di link aja, kedepannya akan coba memperbaikinya lagi.  </Marquee>
+            <Marquee loop={0} className='text-xs text[#fff]'>untuk sementara spotifynya cuman bisa di akses pakai link. karena ada maintanance pada spotifynya, sehingga saya tidak bisa mengakses halaman webnya dan mendapatkan token API keynya.</Marquee>
             </div>
-           
         </div>
     </div>
   )
