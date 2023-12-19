@@ -5,6 +5,7 @@ import GitHubCalendar from 'react-github-calendar';
 import { FaGithub } from "react-icons/fa";
 import Link from 'next/link';
 
+
 const page = () => {
 
   const explicitTheme:any = {
@@ -35,6 +36,7 @@ const page = () => {
         theme={explicitTheme} 
         /> 
         </div>
+        
         </div>
     </div>
     </>

@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Navigation from '@/components/Navigation'
-import Comments from "@/app/guestbook/Comments"
 
 
 
@@ -20,7 +19,7 @@ const page = () => {
             <hr className='my-5 dark:border-dark-100 border-[#525252] border-1 border-dashed' />
             <div>
        
-            <Comments/>
+            
             </div>
         </div>
     </div>

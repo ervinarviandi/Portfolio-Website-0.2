@@ -1,5 +1,5 @@
 import React from 'react'
-import Safe from "react-safe"
+// import Safe from "react-safe"
 
 
 

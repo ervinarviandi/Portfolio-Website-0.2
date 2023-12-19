@@ -14,7 +14,7 @@ const page = () => {
         <div className='lg:max-w-5xl mx-auto lg:px-10 px-5'>
           <p className=''></p>
           <div className='flex justify-between items-center my-5'>
-          <Link href="/myBlog" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
+          <Link href="/myBlog" className=' flex items-center gap-2 dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
                 <BsArrowLeftCircleFill/>
                 Back
             </Link>

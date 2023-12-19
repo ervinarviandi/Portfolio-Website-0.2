@@ -43,7 +43,7 @@ const Hero = () => {
 
                     <div className='flex items-center gap-3'>
                         <Link href="/about" className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden dark:bg-[#1e1e1e] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-l from-[#22d3ee] to-[#2bccb8] before:duration-500 before:ease-out hover:shadow-teal-500 hover:before:h-56 hover:before:w-56  rounded-xl ">
-                          <span className='relative z-10'>
+                          <span className='relative z-0 font-bold'>
                           About Me
                           </span>
                           </Link>

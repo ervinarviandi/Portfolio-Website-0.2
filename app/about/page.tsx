@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Profile from "@/app/Assets/Profile/Profile.png"
 import Link from 'next/link'
 import { BsArrowLeftCircleFill } from 'react-icons/bs'
+import YoutubeEmbed from "@/app/about/components/YoutubeEmbed"
 
 
 const Page = () => {
@@ -17,10 +18,12 @@ const Page = () => {
     <Navigation/>
     <div className='w-full pt-20 myAbout'>
         <div className='md:max-w-7xl mx-auto px-5'>
-        <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
+          <div>
+          <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
                 <BsArrowLeftCircleFill/>
                 Back
             </Link>
+          </div>
           <div className='md:flex lg:flex justify-between gap-5'>
             <div className='md:w-7/12'>
             <Image  className={`
@@ -31,7 +34,7 @@ const Page = () => {
                   : "scale-100 blur-0 grayscale-0"
               })`}
           onLoad={() => setLoading(false)} src={Profile} width={150} height={150} alt='ProfileAboutMobile'/>
-            <h1 className='font-bold md:text-5xl text-2xl mt-7 '>I&apos;m <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text'> Ervin Arviandi </span>. I live in Dompu, where I build the future.
+            <h1 className='font-bold md:text-6xl text-3xl mt-7 '>I&apos;m <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text'> Ervin Arviandi </span>. I live in Dompu, where I build the future.
             </h1>
             </div>
             <div className='md:w-5/12'>
@@ -45,21 +48,27 @@ const Page = () => {
           onLoad={() => setLoading(false)} src={Profile} width={250} height={250} alt='ProfileAbout'/>
             </div>
           </div>
-            <p className='mt-5 text-md  '>Hello👋, My name is Moh Ervin Arviandi , or you can call me Ervin. I focus on studying web application development and web design. The main programming language I&apos;m exploring is Javascript, as well as the React framework (and the environment in general). I love learning 📚 things, and always want to learn new things. I am enthusiastic, reliable, responsible 📱 and hardworking person.</p>
+            <p className='mt-5 md:text-base text-sm  '>Hello👋, My name is Moh Ervin Arviandi , or you can call me Ervin. I focus on studying web application development and web design. The main programming language I&apos;m exploring is Javascript, as well as the React framework (and the environment in general). I love learning 📚 things, and always want to learn new things. I am enthusiastic, reliable, responsible 📱 and hardworking person.</p>
 
-            <p className='mt-5'>I&apos;am passionate about <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text '> Frontend Developer </span> and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮</p>
+            <p className='mt-5 md:text-base text-sm'>I&apos;am passionate about <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text '> Frontend Developer </span> and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮</p>
 
-            <p className='mt-5 '>I&apos;m very interested with Frontend Architecture, Frontend Accessibility, and User Experience, and also interested in mobile development with flutter. 💻📱</p>
+            <p className='mt-5 md:text-base text-sm '>I&apos;m very interested with Frontend Architecture, Frontend Accessibility, and User Experience, and also interested in mobile development with flutter. 💻📱</p>
 
             <h3 className='mt-10 font-bold text-lg'>What I Believe In</h3>
-            <p className='dark:text-dark-100 text-white-100 text-md mt-3'>I want to live a life that goes beyond mere existence. I dedicate myself to being beneficial.</p>
+            <p className='dark:text-dark-100 text-white-100 md:text-base text-sm mt-3'>I want to live a life that goes beyond mere existence. I dedicate myself to being beneficial.</p>
 
             <div className='my-5 border-l-2  border-[#22d3ee] p-4 md:w-6/12'>
-            <p className='text-md italic dark:text-dark-100 text-white-100 '>Again, you can&apos;t connect the dots looking forward&#59; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something &#45; your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life. &#45; <span className='font-bold'> Steve Jobs</span>
+            <p className='md:text-base text-sm italic dark:text-dark-100 text-white-100 '>Again, you can&apos;t connect the dots looking forward&#59; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something &#45; your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life. &#45; <span className='font-bold'> Steve Jobs</span>
               </p>
             </div>
 
-            <p className='text-md my-5 md:w-7/12'>The tools I have used to build website applications are Framer Motion, AOS Animation, Tailwind, Bootstrap, NPM packages & yarn and many other tools. 🔮🚀</p>
+            <p className='md:text-base text-sm my-5 md:w-7/12'>The tools I have used to build website applications are Framer Motion, AOS Animation, Tailwind, Bootstrap, NPM packages & yarn and many other tools. 🔮🚀</p>
+            <div>
+              <p className='md:text-base text-sm'>For me, writing code is the activity that requires the most focus. The slightest annoying sound, Boom! all the program flow that I was thinking in my head was gone.</p>
+
+              <p className='mt-5 md:text-base text-sm'>When coding, I always listen to some lofi music videos, because for me the music is comfortable, relaxing, and increases our focus when coding, I usually prefer coding at night, because at night, the atmosphere is calmer, below is one music videos that I listen to while coding</p>
+            <YoutubeEmbed/>
+            </div>
         </div>
     </div>
     </>

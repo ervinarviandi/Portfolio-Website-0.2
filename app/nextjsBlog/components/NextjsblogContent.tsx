@@ -11,16 +11,16 @@ const NextjsblogContent = () => {
   <h1 className='text-center font-bold lg:text-3xl text-2xl my-4 '>Install Next js</h1>
     <div className='my-3 flex justify-between items-center'>
     <div className='flex items-center gap-2'>
-    <div className='flex items-center gap-2 md:text-md text-xs'>
+    <div className='flex items-center gap-2 md:text-md text-xs dark:text-dark-100 text-white-100'>
     <MdOutlineAvTimer />
       18:52
     </div>
-    <div className='flex items-center gap-2 ml-3 md:text-md text-xs'>
+    <div className='flex items-center gap-2 ml-3 md:text-md text-xs dark:text-dark-100 text-white-100'>
       <FaEye/>
       10
     </div>
     </div>
-    <div className='flex items-center gap-2 md:text-md text-xs'>
+    <div className='flex items-center gap-2 md:text-md text-xs dark:text-dark-100 text-white-100'>
       <FaRegCalendarAlt />
       Minggu, 3 Desember 2023
     </div>

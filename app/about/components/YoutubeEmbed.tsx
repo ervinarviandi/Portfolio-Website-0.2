@@ -6,12 +6,12 @@ import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 const page = () => {
   return (
     <>
-    <div className='w-full py-10'>
-        <div className='lg:max-w-4xl mx-auto px-5'>
+    <div className='py-10'>
+        <div className='w-full max-w-7xl mx-auto md:px-5 lg:px-5 px-2'>
         <LiteYouTubeEmbed 
-        id="_tV5LEBDs7w"
-        title="cozy winter"
-        aspectWidth={13}
+        id="5OOMnZd2Ypg"
+        title="3 AM Coding Session - Lofi Hip Hop Mix [Study & Coding Beats]"
+        aspectWidth={7}
         aspectHeight={4}
         />
         </div>

@@ -12,7 +12,7 @@ import { BiHomeSmile } from "react-icons/bi";
 import { BiCommentDetail } from "react-icons/bi";
 import { LiaBlogSolid, LiaBoxSolid  } from "react-icons/lia";
 import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md";
-
+import { FiUser } from "react-icons/fi";
 
 const Navigation = () => {  
 
@@ -169,6 +169,12 @@ const Navigation = () => {
               <Link href="/" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b  ">
                 <BiHomeSmile size={20}/>
                 Home
+              </Link>
+            </li>
+          <li className="p-2 px-4 text-2xl ">
+              <Link href="/about" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b  ">
+                <FiUser size={20}/>
+                About
               </Link>
             </li>
           <li className="p-2 px-4 text-2xl    ">

@@ -24,8 +24,11 @@ const Footer = () => {
                 </div> */}
             </div>
             <div className='flex flex-col'>
-                        <ul className='flex items-center gap-2'>
+                        <ul className='flex items-center gap-2 overflow-hidden overflow-x-scroll myScrollbar'>
                           
+                            <li>
+                                <Link href="/about" className='md:text-md text-sm  dark:text-dark-100 text-white-100'>About</Link>
+                            </li>
                             <li>
                                 <Link href="/myBlog" className='md:text-md text-sm  dark:text-dark-100 text-white-100'>Blog</Link>
                             </li>
@@ -37,7 +40,13 @@ const Footer = () => {
                             </li>
                           
                             <li>
-                                <Link href="/studio" className='md:text-md text-sm  dark:text-dark-100 text-white-100'> Certificate</Link>
+                                <Link href="/myCertificate" className='md:text-md text-sm  dark:text-dark-100 text-white-100'> Certificate</Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className='md:text-md text-sm  dark:text-dark-100 text-white-100'> Contact</Link>
+                            </li>
+                            <li>
+                                <Link href="/dashboard" className='md:text-md text-sm  dark:text-dark-100 text-white-100'> Dashboard</Link>
                             </li>
                         </ul>
                 </div>
