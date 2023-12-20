@@ -9,6 +9,7 @@ import Logo1 from "@/app/Assets/Icons/Instagram.svg"
 import Logo2 from "@/app/Assets/Icons/Gmail.svg"
 import Logo3 from "@/app/Assets/Icons/500 Px.svg"
 import Logo4 from "@/app/Assets/Icons/Linkedin.svg"
+import Logo5 from "@/app/Assets/Icons/Discord.svg"
 import Location from '@/app/location/page'
 import Form from "@/app/contact/components/Form"
 
@@ -35,8 +36,8 @@ const contact = () => {
                 
                   
 
-                <div className='md:flex lg:flex justify-between gap-5 mt-5'>
-                  <div className='md:w-6/12'>
+                <div className='md:flex lg:flex justify-between gap-5 mt-5 '>
+                  <div className='md:w-6/12 '>
                   <div>
                   <h3 className='md:text-3xl text-2xl font-bold '>Social Media</h3>
                   <p className='dark:text-dark-100 text-white-100 md:text-md text-sm mt-4'>If you want to find me on social media, just search for <span className='font-bold text-[#2bccb8]'> @ervinarviandi.</span> That&apos;s my username on almost all platforms, so it should be easy to find me.</p>
@@ -47,7 +48,7 @@ const contact = () => {
                 <h2 className='text-md mt-5'>Find me on social media</h2>
                
 
-                <div className='md:flex items-center gap-2 py-2'>
+                <div className='md:flex items-center gap-2 py-2 md:overflow-hidden overflow-x-scroll myScrollbar'>
                   <Link href="https://github.com/ervinarviandi" className='bg-gray-600 rounded-md p-2 flex justify-center items-center text-center gap-2 my-2'>
                       <Image src={Logo} width={20} height={20} alt='Github'/>
                       <p className='text-[#fff]'>Github</p>
@@ -60,13 +61,17 @@ const contact = () => {
                       <Image src={Logo2} width={20} height={20} alt='Email'/>
                       <p className='text-[#fff]'>Email</p>
                     </Link>
-                  <Link href="https://500px.com/p/muhamadervin34?view=photos" className='bg-green-500 rounded-md p-2 flex justify-center items-center text-center gap-2 my-2'>
-                      <Image src={Logo3} width={20} height={20} alt='500px'/>
-                      <p className='text-[#fff]'>500px</p>
-                    </Link>
                   <Link href="" className='bg-blue-500 rounded-md p-2 flex justify-center items-center text-center gap-2 my-2'>
                       <Image src={Logo4} width={20} height={20} alt='Linkedin'/>
                       <p className='text-[#fff]'>Linkedin</p>
+                    </Link>
+                    <Link href="https://500px.com/p/muhamadervin34?view=photos" className='bg-green-500 rounded-md p-2 flex justify-center items-center text-center gap-2 my-2'>
+                      <Image src={Logo3} width={20} height={20} alt='500px'/>
+                      <p className='text-[#fff]'>500px</p>
+                    </Link>
+                  <Link href="https://discord.com/channels/@me" className='bg-[#5361f8] rounded-md p-2 flex justify-center items-center text-center gap-2 my-2 md:hidden lg:hidden '>
+                      <Image src={Logo5} width={20} height={20} alt='Discord'/>
+                      <p className='text-[#fff]'>Discord</p>
                     </Link>
                 </div> 
                 <hr className=' dark:border-dark-100 border-[#525252] border-1 border-solid' />
