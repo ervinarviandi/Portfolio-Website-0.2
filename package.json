@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@giscus/react": "^2.4.0",
     "@headlessui/react": "^1.7.17",
     "@types/aos": "^3.0.7",
     "aos": "^3.0.0-beta.6",

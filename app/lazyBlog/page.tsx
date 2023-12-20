@@ -10,7 +10,7 @@ const page = () => {
 
   return (
     <>
-    <div className='w-full py-10 '>
+    <div className='w-full py-10 ' data-aos="fade-up">
         <div className='lg:max-w-5xl mx-auto lg:px-10 px-5'>
           <p className=''></p>
           <div className='flex justify-between items-center my-5'>

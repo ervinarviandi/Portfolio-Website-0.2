@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <>
     <Navigation/>
-    <div className='w-full pt-20 myAbout'>
+    <div className='w-full pt-20 myAbout' data-aos="fade-up">
         <div className='md:max-w-7xl mx-auto px-5'>
           <div>
           <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
