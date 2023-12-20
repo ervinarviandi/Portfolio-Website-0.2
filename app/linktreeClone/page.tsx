@@ -24,7 +24,7 @@ const page = () => {
             </Link>
             </div>
             <h1 className='md:text-2xl text-xl mt-10 '>Linktree Clone</h1>
-            <p className='dark:text-dark-100 text-white-100 mt-3'>A Bio link to connect customers to the business or portfolio website and many more.🎉 </p>
+            <p className='dark:text-dark-100 text-white-100 mt-3'>A Bio link to connect customers to the business or portfolio website and many more 🎉. </p>
             <hr className=' border-dashed  dark:border-[#525252] border-1 border-white-100  my-5 rounded-full' />
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>

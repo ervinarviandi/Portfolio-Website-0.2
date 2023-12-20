@@ -11,7 +11,7 @@ import BootstrapLogo from '@/components/Tech Stack/icons small/BootstrapLogo'
 
 
 const Tittle = "Bookshelf Apps"
-const Description = "A bookshelf app that can show, search, add, delete, update book and move book to other shelf. ✨"
+const Description = "A bookshelf app that can show, search, add, delete, update book and move book to other shelf ✨."
 
 const page = () => {
   return (
