@@ -8,7 +8,7 @@ import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
-import ImageCard from "@/app/qrCode/components/ImageCard"
+import ImageCard from '@/app/qrCode/components/ImageCard'
 import "../../app/globals.css"
 
 const page = () => {
