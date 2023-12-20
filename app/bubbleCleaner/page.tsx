@@ -12,7 +12,7 @@ import "../../app/globals.css"
 
 
 const Tittle = "Bubble Cleaner"
-const Description = "Personal website was built originally from scratch using several powerful stacks."
+const Description = "a simple landing page bubble cleaner i made to improve my slicing. 🔮"
 
 const page = () => {
   return (

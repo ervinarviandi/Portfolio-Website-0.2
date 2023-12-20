@@ -8,7 +8,7 @@ import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
-import ImageCard from "@/app/qrCode/components/imageCard"
+import ImageCard from "@/app/qrCode/components/ImageCard"
 import "../../app/globals.css"
 
 const page = () => {
@@ -24,7 +24,7 @@ const page = () => {
             </Link>
             </div>
             <h1 className='md:text-2xl text-xl mt-10 '>QR Code Generator</h1>
-            <p className='dark:text-dark-100 text-white-100 mt-3'>Personal website was built originally from scratch using several powerful stacks.</p>
+            <p className='dark:text-dark-100 text-white-100 mt-3'>A simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device. 🔮</p>
             <hr className=' border-dashed  dark:border-[#525252] border-1 border-white-100  my-5 rounded-full' />
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>

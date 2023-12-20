@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Thumbnails from "@/public/qrcode-generator.jpg"
 import Mobile from "@/public/Design/projects/mobile QrCode Design.svg"
 
-export default function imageCard() {
+export default function ImageCard() {
 
   const [isLoading, setLoading] = useState(true);
   return (
