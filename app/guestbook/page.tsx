@@ -6,10 +6,6 @@ import Comments from '@/app/guestbook/Comments'
 
 
 const page = () => {
-
-  
-
-
   return (
     <>
         <Navigation/>

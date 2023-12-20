@@ -7,6 +7,8 @@ import Mobile from "@/public/Design/projects/mobile QrCode Design.svg"
 export default function ImageCard() {
 
   const [isLoading, setLoading] = useState(true);
+
+  
   return (
     <div className='mt-10 md:flex items-center'>
         <Image src={Thumbnails} width={500} height={500} className={`
