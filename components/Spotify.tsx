@@ -16,7 +16,7 @@ const Spotify = () => {
             </Link>
             <div className='w-7/12'>
             <Marquee loop={0} className='text-xs ' >
-              untuk sementara spotifynya cuman bisa di akses pakai link. karena ada maintanance 🔨 pada spotifynya. </Marquee>
+              untuk sementara spotifynya cuman bisa di akses pakai link. karena ada maintanance 🔨 pada spotifynya. next akan update menggunakan api😉👌</Marquee>
             </div>
         </div>
     </div>

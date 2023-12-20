@@ -6,9 +6,8 @@ function MyPopover() {
   return (
     <Popover>
       {({ open }) => (
-        /* Use the `open` state to conditionally change the direction of the chevron icon. */
         <>
-          <Popover.Button className=" relative text-sm bg-transparent bg-backgrounddark/60 backdrop-blur flex items-center justify-center gap-2 rounded-full p-2">
+          <Popover.Button className=" relative text-sm bg-transparent  backdrop-blur flex items-center justify-center gap-2 rounded-full p-2">
             Maps
             <AiOutlineCaretDown className={open ? 'rotate-180 transform' : ''} />
           </Popover.Button>
