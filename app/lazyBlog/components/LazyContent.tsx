@@ -42,13 +42,13 @@ const LazyContent = () => {
             <p className='md:text-base text-sm mt-5'>Inisialisasi tailwind di dalam aplikasi Next.js</p>
           </div>
           <div className='bg-[#282a36] p-2 mt-5 rounded-lg md:w-8/12'>
-            <p className='md:text-base text-sm'>  <span className='text-blue-400'>npm</span> install -D tailwindcss postcss autoprefixer</p>
-            <p className='mt-2 md:text-base text-sm'> <span className='text-blue-400'>npx</span> tailwindcss init -p</p>
+            <p className='md:text-base text-sm text-[#fff]'>  <span className='text-blue-400'>npm</span> install -D tailwindcss postcss autoprefixer</p>
+            <p className='mt-2 md:text-base text-sm text-[#fff]'> <span className='text-blue-400'>npx</span> tailwindcss init -p</p>
           </div>
           <p className='mt-5 md:text-base text-sm'>untuk lebih jelasnya kalian bisa baca dokumentasi di website resminya <Link href="https://tailwindcss.com/" className='text-[#38bdf8]'>https://tailwindcss.com/</Link></p>
 
           <p className='mt-5 md:text-base text-sm'>Langkah 2: Buat Component Gambar Blur</p>
-          <p className='mt-5 md:text-base text-sm'>Buat file baru dengan nama <span className='p-2 rounded-lg bg-[#282a36]'>BlurImage.jsx</span> di dalam folder component</p>
+          <p className='mt-5 md:text-base text-sm'>Buat file baru dengan nama <span className='p-2 rounded-lg bg-[#282a36] text-[#fff]'>BlurImage.jsx</span> di dalam folder component</p>
           <p className=' mt-5 md:text-base text-sm'>Di dalam folder komponen/BlurImage.jsx, tambahkan kode berikut,</p>
           <Image src={Code} width={600} height={600} alt='BlurImage' className='mt-4'/>
 
@@ -57,7 +57,7 @@ const LazyContent = () => {
           <p className='mt-5 md:text-base text-sm'>Import component</p>
 
           <div className='mt-5 p-2 rounded-lg bg-[#282a36] md:w-8/12 overflow-hidden'>
-            <p className='md:text-base text-xs  '> <span className='text-[#ff79c6]'> import </span> <span> BlurImage</span> <span className='text-[#50fa70]'> from </span> <span className='text-[#f1fa87]'>{content}</span></p>
+            <p className='md:text-base text-xs text-[#fff]  '> <span className='text-[#ff79c6]'> import </span> <span> BlurImage</span> <span className='text-[#50fa70]'> from </span> <span className='text-[#f1fa87]'>{content}</span></p>
           </div>
 
           <p className='mt-5 md:text-base text-sm'>Tambahkan Component di dalam halaman</p>

@@ -1,8 +1,8 @@
 "use client"
 import React, {useState} from 'react'
 import Image from 'next/image'
-import Logo from "@/public/qrcode-generator.jpg"
-import Mobile from "@/public/Design/projects/mobile qrcode design figma.svg"
+import Logo from "@/public/5.png"
+import Mobile from "@/app/Assets/Photoshop/mobile qr code figma.svg"
 
 
 export default function ImageCard() {

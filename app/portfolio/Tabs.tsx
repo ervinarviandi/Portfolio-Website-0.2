@@ -23,6 +23,7 @@ import Karya4 from "@/app/Assets/Photoshop/dheni patungka.webp"
 import Karya5 from "@/app/Assets/Photoshop/reza arap.webp"
 import Karya6 from "@/app/Assets/Photoshop/Microworlds 1.webp"
 import Karya7 from "@/app/Assets/Photoshop/Microworlds.webp"
+import JavascriptLogo from '@/components/Tech Stack/icons small/JavascriptLogo'
 
 
 
@@ -51,7 +52,7 @@ export default function Example() {
                   )
                 }
               >
-                Web Developer
+                Web / App
               </Tab>
               <Tab
                 className={({ selected }) =>
@@ -107,6 +108,7 @@ export default function Example() {
                                 <ReactLogo />
                                 <TypescriptLogo/>
                                 <TailwindLogo/>
+                                <ViteLogo/>
                             </div>
                         </div>
                     </div>
@@ -168,6 +170,7 @@ export default function Example() {
                             <p className='md:text-md text-sm dark:text-dark-100 text-white-100 py-3'>a simple landing page bubble cleaner i made to improve my slicing.</p>
                             <div className='flex items-center gap-2'>
                                 <ReactLogo />
+                                <JavascriptLogo/>
                                 <TailwindLogo/>
                                 <ViteLogo/>
                             </div>

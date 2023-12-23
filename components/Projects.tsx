@@ -11,6 +11,7 @@ import ViteLogo from "@/components/Tech Stack/icons small/ViteLogo"
 import BootstrapLogo from "@/components/Tech Stack/icons small/BootstrapLogo"
 import { TiPin } from "react-icons/ti";
 import { FaArrowRight } from "react-icons/fa6";
+import JavascriptLogo from './Tech Stack/icons small/JavascriptLogo'
 
 const Title = "Latest Project";
 const Description = "I'm also experienced at some website development and software testing that i learn for 4 month will described below"
@@ -56,6 +57,7 @@ const Projects = () => {
                                 <ReactLogo />
                                 <TypescriptLogo/>
                                 <TailwindLogo/>
+                                <ViteLogo/>
                             </div>
                         </div>
                     </div>
@@ -104,6 +106,7 @@ const Projects = () => {
                             <p className='md:text-md text-sm dark:text-dark-100 text-white-100 py-3'>a simple landing page bubble cleaner i made to improve my slicing.</p>
                             <div className='flex items-center gap-2'>
                                 <ReactLogo />
+                                <JavascriptLogo/>
                                 <TailwindLogo/>
                                 <ViteLogo/>
                                
