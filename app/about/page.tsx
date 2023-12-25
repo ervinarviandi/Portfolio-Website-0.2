@@ -7,6 +7,7 @@ import Profile from "@/app/Assets/Profile/Profile.png"
 import Link from 'next/link'
 import { BsArrowLeftCircleFill } from 'react-icons/bs'
 import YoutubeEmbed from "@/app/about/components/YoutubeEmbed"
+import Skills from "@/components/Skills"
 
 
 const Page = () => {
@@ -48,7 +49,8 @@ const Page = () => {
           onLoad={() => setLoading(false)} src={Profile} width={250} height={250} alt='ProfileAbout'/>
             </div>
           </div>
-            <p className='mt-5 md:text-base text-sm  '>Hello👋, My name is Moh Ervin Arviandi , or you can call me Ervin. I focus on studying web application development and web design. The main programming language I&apos;m exploring is Javascript, as well as the React framework (and the environment in general). I love learning 📚 things, and always want to learn new things. I am enthusiastic, reliable, responsible 📱 and hardworking person.</p>
+          <p className='mt-5 md:text-base text-sm '>Hello👋, I&apos;m Ervin. With over 2+ years of experience in Web Development, covering both frontend. I&apos;m particularly passionate about frontend side, where I focus on creating web applications that are not only precise but also user-friendly experiences.</p>
+            <p className='mt-5 md:text-base text-sm  '>FYI, I really like and enjoy learning new things related to technology, as a <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text'> front-end developer</span>, I have to keep up with technological developments. In the future there will definitely be many new features, tools and programming languages that will make it easier for us to create and develop 🔨🔮 a website application. 💻📱</p>
 
             <p className='mt-5 md:text-base text-sm'>I&apos;am passionate about <span className='text-transparent bg-gradient-to-r from-blue-300 to-teal-500 bg-clip-text '> Frontend Developer </span> and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮</p>
 
@@ -68,6 +70,8 @@ const Page = () => {
 
               <p className='mt-5 md:text-base text-sm'>When coding, I always listen to some lofi music videos, because for me the music is comfortable, relaxing, and increases our focus when coding, I usually prefer coding at night, because at night, the atmosphere is calmer, below is one music videos that I listen to while coding</p>
             <YoutubeEmbed/>
+            <Skills/>
+           
             </div>
         </div>
     </div>

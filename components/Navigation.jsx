@@ -56,7 +56,7 @@ const Navigation = () => {
       const currentTheme = theme === "system" ? systemTheme : theme;
       if (currentTheme === "dark") {
         return (
-          <button className=" p-2 rounded-full" id="button" aria-label="button" onClick={() => setTheme("light")}>
+          <button className=" p-2 rounded-full"  aria-label="button" onClick={() => setTheme("light")}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#facc15" viewBox="0 0 24 24" strokeWidth="2" stroke="#facc15" className="w-5 h-5">
               <path
                 strokeLinecap="round"
@@ -68,7 +68,7 @@ const Navigation = () => {
         );
       } else {
         return (
-          <button className=" p-2 rounded-full " id="button" aria-label="button" onClick={() => setTheme("dark")}>
+          <button className=" p-2 rounded-full "  aria-label="button" onClick={() => setTheme("dark")}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#0284c7" viewBox="0 0 24 24" strokeWidth="0" stroke="currentColor" className="w-5 h-5">
               <path
                 strokeLinecap="round"

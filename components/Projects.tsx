@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <div className='w-full py-10'>
-        <div className='md:max-w-6xl mx-auto lg:px-10 px-5 '>
+        <div className='md:max-w-7xl mx-auto lg:px-10 px-5 '>
             <h2 className='md:text-3xl text-xl font-bold'>{Title}</h2>
             <p className='md:text-lg text-md dark:text-dark-100 text-white-100 mt-4 lg:w-10/12'>{Description}</p>
             <div className='grid md:grid-cols-2 gap-5 max-w-4xl mx-auto mt-4'>

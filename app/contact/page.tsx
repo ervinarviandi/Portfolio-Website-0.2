@@ -27,7 +27,7 @@ const contact = () => {
         <div className='w-full pt-20 contact' data-aos="fade-up">
             <div className='md:max-w-7xl mx-auto lg:px-10 px-5'>
                 <h1 className='md:text-5xl text-2xl font-bold '>Contact </h1>
-                <p className='md:text-xl text-lg mt-4'> 👋 Get in touch with me anytime, through social media, e-mail, or phone number.</p>
+                <p className='md:text-lg text-md  mt-4'> 👋 Get in touch with me anytime, through social media, e-mail, or phone number.</p>
                 <div>
                   <p className='md:text-md text-sm dark:text-dark-100 text-white-100 my-4'>Just a friendly reminder that the information provided here is for business purposes only. <br /> If you have any questions, feel free to chat with me directly on my social media.</p>
                 </div>

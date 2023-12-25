@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
     <div className='w-full pt-10 pb-4'>
-        <div className='md:max-w-6xl mx-auto lg:px-10 px-5'>
+        <div className='md:max-w-7xl mx-auto lg:px-10 px-5'>
             <div className='grid md:grid-cols-2 '>
                 <div className='flex flex-col'> 
                 <p className='font-bold lg:text-xl text-md'>🤝 Let&apos;s get in touch</p>

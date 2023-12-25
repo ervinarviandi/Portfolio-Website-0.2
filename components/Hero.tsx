@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div className='h-screen w-full  pt-[96px] myHero'data-aos="fade-up">
-        <div className='md:max-w-6xl mx-auto lg:px-10 px-5'>
+        <div className='md:max-w-7xl mx-auto lg:px-10 px-5'>
           <Image src={Logo} alt="mobileImage"  width={160} height={160}  className={`
               duration-700 ease-in-out group-hover:opacity-75 md:hidden block
               ${
@@ -35,11 +35,11 @@ const Hero = () => {
             <div className='grid md:grid-cols-2 mt-16 mx-auto '>
                 <div className='flex flex-col'>
                     <div className='flex items-center gap-2'>
-                    <h5 className='text-3xl font-sora2 text-[ #60a5fa] '>Hi! </h5>
+                    <h1 className='text-3xl font-sora2 text-[ #60a5fa] '>Hi! </h1>
                     <Image src={Hands} width={40} height={40} alt='iconshand'/>
                     </div>
-                    <h1 className='md:text-7xl text-3xl font-bold dark:text-[#fff] text-[#000] '>I&apos;m <span className='text-transparent bg-gradient-to-r from-[#22d3ee] to-teal-500 bg-clip-text '> Ervin </span><span className='text-[#000] dark:text-[#fff]'>Arviandi</span></h1>
-                    <p className='font-sora text-md  my-7 md:w-10/12 dark:text-dark-100 text-white-100'>a happy <span className='font-bold'> Front-End Developer </span> who strives to help others grow in web development</p>
+                    <h2 className='md:text-7xl text-3xl font-bold dark:text-[#fff] text-[#000] '>I&apos;m <span className='text-transparent bg-gradient-to-r from-[#22d3ee] to-teal-500 bg-clip-text '> Ervin </span><span className='text-[#000] dark:text-[#fff]'>Arviandi</span></h2>
+                    <p className='font-sora text-md  my-7 md:w-10/12 dark:text-dark-100 text-white-100'>Passionate and seasoned Software Engineer with a strong focus on frontend development. well-versed in all aspects of web technologies. Collaborative team player dedicated to delivering efficient, scalable, and visually appealing web applications.</p>
 
                     <div className='flex items-center gap-3'>
                         <Link href="/about" className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden dark:bg-[#1e1e1e] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-l from-[#22d3ee] to-[#2bccb8] before:duration-500 before:ease-out hover:shadow-teal-500 hover:before:h-56 hover:before:w-56  rounded-xl ">

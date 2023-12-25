@@ -9,7 +9,7 @@ import Logo2 from "@/public/featured/flash-dynamic-gradient.svg"
 const Featured = () => {
   return (
     <div className='w-full py-10 featured'>
-        <div className='lg:max-w-6xl md:max-w-6xl mx-auto lg:px-10 px-5 '>
+        <div className='lg:max-w-7xl md:max-w-7xl mx-auto lg:px-10 px-5 '>
             <div className='grid md:grid-cols-3 gap-5'>
                 <div className='flex flex-col'>
                     <div className='dark:bg-[#1e1e1e] backdrop-blur  bg-[#fff] rounded-lg p-4 border-slate-200 dark:border-none border-2 hover:shadow-md featured-card'>
