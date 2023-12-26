@@ -27,7 +27,7 @@ const page = () => {
             </Link>
             </div>
             <h1 className='md:text-2xl text-xl mt-10 '>{Tittle}</h1>
-            <p className='dark:text-dark-100 text-white-100 mt-3'>{Description}.</p>
+            <p className='dark:text-dark-100 text-white-100 mt-3'>{Description}</p>
             <hr className='dark:border-[#525252] border-white-100 border-1 border border-dashed my-5 rounded-full' />
             <div className='md:flex justify-between items-center'>
                 <div className='flex items-center gap-3'>
