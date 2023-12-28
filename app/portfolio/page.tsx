@@ -30,7 +30,7 @@ const Portfolio = () => {
             <div className='md:max-w-7xl mx-auto lg:px-10 px-5'>
                 <div className="">
                   <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff]'>Projects</h1>
-                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-4'>I&apos;ve worked on a variety of projects, ranging from small MVPs to full-scale applications, also developed a wide array of features
+                  <p className='md:text-lg text-sm dark:text-dark-100 text-white-100 mt-4'>I&apos;ve worked on a variety of projects, ranging from small MVPs to full-scale applications, also developed a wide array of features
                   and functionalities in projects.</p>
                   <hr className='  border-dashed  dark:border-[#525252] border-1 border-white-100 my-5' />
                 </div>

@@ -29,7 +29,7 @@ const contact = () => {
                 <h1 className='md:text-5xl text-2xl font-bold '>Contact </h1>
                 <p className='md:text-lg text-md  mt-4'> 👋 Get in touch with me anytime, through social media, e-mail, or phone number.</p>
                 <div>
-                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 my-4'>Just a friendly reminder that the information provided here is for business purposes only. <br /> If you have any questions, feel free to chat with me directly on my social media.</p>
+                  <p className='md:text-lg text-sm dark:text-dark-100 text-white-100 my-4'>Just a friendly reminder that the information provided here is for business purposes only. <br /> If you have any questions, feel free to chat with me directly on my social media.</p>
                 </div>
                 <hr className='my-5 dark:border-dark-100 border-[#525252] border-1 border-dashed' />
                 
@@ -40,9 +40,9 @@ const contact = () => {
                   <div className='md:w-6/12 '>
                   <div>
                   <h3 className='md:text-3xl text-2xl font-bold '>Social Media</h3>
-                  <p className='dark:text-dark-100 text-white-100 md:text-md text-sm mt-4'>If you want to find me on social media, just search for <span className='font-bold text-[#2bccb8]'> @ervinarviandi.</span> That&apos;s my username on almost all platforms, so it should be easy to find me.</p>
+                  <p className=' md:text-md text-sm mt-4'>If you want to find me on social media, just search for <span className='font-bold text-[#2bccb8]'> @ervinarviandi.</span> That&apos;s my username on almost all platforms, so it should be easy to find me.</p>
 
-                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-7'>But if you&apos;re short on time, I&apos;ve included some links to the social media platforms I use most frequently below.</p>
+                  <p className='md:text-md text-sm  mt-7'>But if you&apos;re short on time, I&apos;ve included some links to the social media platforms I use most frequently below.</p>
                 </div>
 
                 <h2 className='text-md mt-5'>Find me on social media</h2>

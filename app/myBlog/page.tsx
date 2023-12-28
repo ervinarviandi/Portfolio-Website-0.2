@@ -15,7 +15,7 @@ const page = () => {
     <div className='w-full pt-20 MyBlog' data-aos="fade-up">
         <div className='lg:max-w-7xl mx-auto lg:px-10 px-5'>
                   <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff] mt-4'>Blog</h1>
-                  <p className='md:text-md text-sm dark:text-dark-100 text-white-100 mt-4'>Exploring the world of code, creativity, and constant learning.</p>
+                  <p className='md:text-lg text-sm dark:text-dark-100 text-white-100 mt-4'>Exploring the world of code, creativity, and constant learning.</p>
                   <hr className=' border-dashed  dark:border-dark-100 border-[#525252] border-1 my-5' />
                   <div className='grid md:grid-cols-2 gap-5 mt-5'>
                     <div className='flex flex-col'>
