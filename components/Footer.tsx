@@ -10,10 +10,10 @@ const Footer = () => {
         <div className='md:max-w-7xl mx-auto lg:px-10 px-5'>
             <div className='grid md:grid-cols-2 '>
                 <div className='flex flex-col'> 
-                <p className='font-bold lg:text-xl text-md'>🤝 Let&apos;s get in touch</p>
-                        <h4 className='lg:text-lg text-md md:mt-0 my-4 dark:text-dark-100 text-white-100'>Suka kopi, mau ngopi bareng?
+                <h6 className='font-bold lg:text-xl text-md'>🤝 Let&apos;s get in touch</h6>
+                        <p className='lg:text-lg text-md md:mt-0 my-4 dark:text-dark-100 text-white-100'>Suka kopi, mau ngopi bareng?
                         <br /> Have any project ideas?
-                        Ask something?</h4>
+                        Ask something?</p>
                 </div>
                
                 {/* <div className='md:w-3/12'>

@@ -7,6 +7,7 @@ import TailwindIcons from '../Tech Stack/icons small/TailwindLogo'
 import FlutterIcons from "@/components/Tech Stack/icons small/FlutterLogo"
 import MysqlIcons from "@/components/Tech Stack/icons small/Mysql"
 import FigmaIcons from "@/components/Tech Stack/icons small/Figma"
+import NetlifyIcons from "@/components/Tech Stack/icons small/NetlifyLogo"
 
 
 const SkillscontentLeft = () => {
@@ -44,6 +45,10 @@ const SkillscontentLeft = () => {
     <div className='dark:bg-[#1e1e1e] bg-[#fff] shadow-lg rounded-full py-2 px-6 flex items-center gap-2   '>
         <FigmaIcons/>
         <p className='text-md'>Figma</p>
+    </div>
+    <div className='dark:bg-[#1e1e1e] bg-[#fff] shadow-lg rounded-full py-2 px-6 flex items-center gap-2   '>
+        <NetlifyIcons/>
+        <p className='text-md'>Netlify</p>
     </div>
 </div>  
     </>
