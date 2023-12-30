@@ -1,8 +1,7 @@
 "use client"
 import React from 'react'
 import Navigation from '@/components/Navigation'
-import Comments from '@/app/guestbook/Comments'
-
+import Comments from "@/app/guestbook/Comments"
 
 
 const page = () => {

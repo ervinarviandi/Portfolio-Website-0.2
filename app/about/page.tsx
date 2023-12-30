@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Image from 'next/image'
 import Profile from "@/app/Assets/Profile/Profile.png"
 import Link from 'next/link'
-import { BsArrowLeftCircleFill } from 'react-icons/bs'
+import { HiOutlineArrowCircleLeft } from "react-icons/hi"
 import YoutubeEmbed from "@/app/about/components/YoutubeEmbed"
 import Skills from "@/components/Skills"
 
@@ -19,9 +19,9 @@ const Page = () => {
     <Navigation/>
     <div className='w-full pt-20 myAbout' data-aos="fade-up">
         <div className='md:max-w-7xl mx-auto px-5'>
-          <div>
-          <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] '>
-                <BsArrowLeftCircleFill/>
+          <div className='flex '>
+          <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100 dark:hover:text-[#fff] hover:text-[#000] '>
+                <HiOutlineArrowCircleLeft size={20}/>
                 Back
             </Link>
           </div>

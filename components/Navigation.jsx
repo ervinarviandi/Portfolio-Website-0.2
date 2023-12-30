@@ -98,7 +98,7 @@ const Navigation = () => {
               </Link>
               </li>
               <li>
-              <Link href="/portfolio" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Project
+              <Link href="/portfolio" className='text-white-100 dark:text-dark-100 link link-underline link-underline-black pb-2 text-sm'>Projects
               </Link>
               </li>
               <li>
@@ -180,7 +180,7 @@ const Navigation = () => {
           <li className="p-2 px-4 text-2xl    ">
               <Link href="/portfolio" className="flex gap-2 items-center text-white-100 dark:text-dark-100 link link-underline link-underline-black  pb-2  border-dashed  dark:border-dark-100 border-[#525252] border-1 border-b  ">
                 <LiaBoxSolid size={20} />
-                Project
+                Projects
               </Link>
             </li>
             <li className="p-2 px-4 text-2xl    ">

@@ -33,7 +33,7 @@ const Footer = () => {
                                 <Link href="/myBlog" className='md:text-md text-sm  dark:text-dark-100 text-white-100'>Blog</Link>
                             </li>
                             <li>
-                                <Link href="/portfolio" className='md:text-md text-sm  dark:text-dark-100 text-white-100'>Project</Link>
+                                <Link href="/portfolio" className='md:text-md text-sm  dark:text-dark-100 text-white-100'>Projects</Link>
                             </li>
                             <li>
                                 <Link href="/studio" className='md:text-md text-sm  dark:text-dark-100 text-white-100'> Questions</Link>

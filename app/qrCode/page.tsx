@@ -6,10 +6,10 @@ import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import ViteLogo from "@/components/Tech Stack/icons small/ViteLogo"
 import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
-import { BsArrowLeftCircleFill } from "react-icons/bs";
 import ImageCard from "@/app/qrCode/components/ImageCard"
 import "../../app/globals.css"
 import Typescript from '@/components/Tech Stack/icons small/Typescript'
+import { HiOutlineArrowCircleLeft } from 'react-icons/hi'
 
 const page = () => {
   return (
@@ -19,7 +19,7 @@ const page = () => {
         <div className="md:max-w-7xl mx-auto lg:px-10 px-5 ">
             <div className='flex items-center gap-2'>
             <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100  dark:hover:text-[#fff] hover:text-[#000]'>
-                <BsArrowLeftCircleFill/>
+                <HiOutlineArrowCircleLeft size={20}/>
                 Back
             </Link>
             </div>

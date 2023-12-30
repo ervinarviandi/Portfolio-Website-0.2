@@ -1,7 +1,7 @@
 import React from "react";
 import Giscus from "@giscus/react"
 
-export default function Comment() {
+export default function Comments() {
 
   return (
     <Giscus

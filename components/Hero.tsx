@@ -38,7 +38,7 @@ const Hero = () => {
                     <h1 className='text-3xl font-sora2 text-[ #60a5fa] '>Hi! </h1>
                     <Image src={Hands} width={40} height={40} alt='iconshand'/>
                     </div>
-                    <h2 className='md:text-7xl text-4xl font-bold dark:text-[#fff] text-[#000] '>I&apos;m <span className='text-transparent bg-gradient-to-r from-[#22d3ee] to-teal-500 bg-clip-text '> Ervin </span> <br /><span className='text-[#000] dark:text-[#fff]'>Arviandi</span></h2>
+                    <h2 className='md:text-7xl text-3xl font-bold dark:text-[#fff] text-[#000] '>I&apos;m <span className='text-transparent bg-gradient-to-r from-[#22d3ee] to-teal-500 bg-clip-text '> Ervin </span> <span className='text-[#000] dark:text-[#fff]'>Arviandi</span></h2>
                     <p className='font-sora text-md  my-7 md:w-10/12 dark:text-dark-100 text-white-100'>Passionate and seasoned Software Engineer with a strong focus on frontend development. well-versed in all aspects of web technologies. Collaborative team player dedicated to delivering efficient, scalable, and visually appealing web applications.</p>
 
                     <div className='flex items-center gap-3'>

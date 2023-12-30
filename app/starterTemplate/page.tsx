@@ -5,12 +5,12 @@ import Navigation from '@/components/Navigation'
 import NextLogo from '@/components/Tech Stack/icons small/NextJs'
 import TailwindLogo from '@/components/Tech Stack/icons small/TailwindLogo'
 import { FaGithub } from "react-icons/fa";
-import { BsArrowLeftCircleFill } from "react-icons/bs";
 import ImageCard from "@/app/starterTemplate/components/ImageCard"
 import Typescript from '@/components/Tech Stack/icons small/Typescript'
 import "../../app/globals.css"
 import { HiMiniArrowTopRightOnSquare } from 'react-icons/hi2'
 import Slug from "@/app/starterTemplate/components/Slug"
+import { HiOutlineArrowCircleLeft } from 'react-icons/hi'
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
         <div className="md:max-w-7xl mx-auto lg:px-10 px-5 ">
             <div className='flex items-center gap-2'>
             <Link href="/" className=' flex items-center gap-2  dark:text-dark-100 text-white-100  dark:hover:text-[#fff] hover:text-[#000]'>
-                <BsArrowLeftCircleFill/>
+                <HiOutlineArrowCircleLeft size={20}/>
                 Back
             </Link>
             </div>

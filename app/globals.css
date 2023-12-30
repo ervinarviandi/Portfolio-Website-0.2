@@ -20,14 +20,15 @@
 .myHero {
   background: url(../app/Assets/background/Ellipse\ 8.svg);
   background-repeat: no-repeat;
-  /* background-position: right; */
+  /* background-position: center;
+  background-blend-mode: multiply; */
 }
 
 
 
 
 /* .featured-card {
-  background: url(../public/Bg/glassmorphism/gray.svg);
+  background: url(../public/Bg/glassmorphism/bg-right-top.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

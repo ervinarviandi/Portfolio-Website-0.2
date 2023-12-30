@@ -15,14 +15,15 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        // backgrounddark: "#0c1222",
-        // backgrounddark: "#111111",
-        backgrounddark: "#0c0c0c",
+        backgrounddark: "#0c0c0c", 
+        // bg-default
+        // backgrounddark: "#060b13",
+
         backgroundlight: "#fdfefe",
         dark: {
-          // '100': "#a5aeb8",
           '100': "#818181",
-          // '200': "#a5aeb8"
+          // '100': "#95A0B2",
+
         },
         white: {
           // '100': "#848484"

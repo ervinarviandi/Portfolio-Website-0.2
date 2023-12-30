@@ -4,12 +4,13 @@
 import React  from 'react'
 import { useState } from 'react';
 import Link from 'next/link'
-import { FiArrowRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 import Image from 'next/image';
 import Thubnasils2 from "../public/Blog/astroBlog.png"
 import Thubnasils3 from "../public/Blog/Headless ui.png"
 import Thubnasils4 from "../public/Blog/Next js tailwind.png"
 import Thubnasils5 from "../public/Blog/lazyload.png"
+import { HiOutlineArrowCircleRight } from 'react-icons/hi';
 
 const Articles_Title = "Latest Articles";
 
@@ -28,15 +29,15 @@ const Articles = () => {
           <h1 className='md:text-3xl text-xl font-bold'>{Articles_Title}</h1>
           <Link href="/myBlog" className=' item-center gap-2 md:flex hidden text-sm dark:text-dark-100'>
           View All Articles
-          <FiArrowRight size={20}/>
+          <HiOutlineArrowCircleRight size={20}/>
           </Link>
           <Link href="/myBlog" className=' item-center gap-2 md:hidden flex text-sm dark:text-dark-100'>
           View All 
-          <FiArrowRight size={20}/>
+          <HiOutlineArrowCircleRight size={20}/>
           </Link>
           </div>
-          <div className='mt-7'>
-            <h5 className='text-xl font-bold '>Check out my blog</h5>
+          <div className='mt-6'>
+            {/* <h5 className='text-xl font-bold '>Check out my blog</h5> */}
             <p className='dark:text-dark-100 text-white-100 lg:text-lg text-md mt-4'>Stay informed about my writing by subscribing to my blog.</p>
           </div>
             <div className="min-w-[250px] h-max mt-4 border-solid border-1 border-b  border-white-100 dark:border-[#525252] ">
