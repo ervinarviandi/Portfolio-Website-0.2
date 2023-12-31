@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import PopOver from "@/components/commons/PopOver"
 import Logo from "@/public/ervinarviandi.jpg"
 import Link from "next/link"
 import Image from "next/image"
