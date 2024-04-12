@@ -16,9 +16,9 @@ const page = () => {
             <hr className='my-5 dark:border-dark-100 border-[#525252] border-1 border-dashed' />
             <div>
             <Comments/>
-            <div>
-              <p className='text-sm dark:text-dark-100 text-white-100'>fitur Guestbooknya belum bisa digunakan, dikarenakan ada pengembangan oleh tim developer dari giscusnya, karena library ini bersifat open source jadi akan banyak update & pengembangan yang dilakukan 🔮👌.   </p>
-            </div>
+            {/* <div>
+              <p className='text-sm dark:text-dark-100 text-white-100'>fitur Guestbooknya belum bisa digunakan, dikarenakan ada pengembangan oleh tim developer dari giscusnya, karena library ini bersifat open source jadi akan banyak update & pengembangan yang dilakukan 🔮👌.  </p>
+            </div> */}
             </div>
         </div>
     </div>

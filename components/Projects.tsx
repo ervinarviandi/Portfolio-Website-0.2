@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Copas from "@/public/copas-abangkuu.jpg"
 import Projects1 from "@/public/qrcode-generator.jpg"
 import Logo from "@/app/Assets/projects thumbnails/nextStarterKit.png"
 import Projects2 from "@/public/reactlink.jpg"
@@ -10,6 +11,7 @@ import TailwindLogo from "@/components/Tech Stack/icons small/TailwindLogo"
 import TypescriptLogo from "@/components/Tech Stack/icons small/Typescript"
 import ViteLogo from "@/components/Tech Stack/icons small/ViteLogo"
 import NextLogo from "@/components/Tech Stack/icons small/NextJs"
+import FramerLogo from "@/components/Tech Stack/icons small/FramerLogo"
 import { TiPin } from "react-icons/ti";
 import { FaArrowRight } from "react-icons/fa6";
 import JavascriptLogo from './Tech Stack/icons small/JavascriptLogo'
@@ -34,6 +36,38 @@ const Projects = () => {
             <h2 className='md:text-3xl text-xl font-bold'>{Title}</h2>
             <p className='md:text-lg text-md dark:text-dark-100 text-white-100 mt-4 lg:w-10/12'>{Description}</p>
             <div className='grid md:grid-cols-2 gap-5  max-w-4xl  mx-auto mt-4'>
+                <div className='flex flex-col'>
+                    <div className='dark:bg-[#1e1e1e] bg-[#fff] rounded-lg  border-slate-200 dark:border-none border-2 hover:shadow-md hover:scale-[102%] duration-300 ease-in-out relative group '>
+                        <div className='overflow-hidden relative group  '>
+                        <div className='absolute top-0 right-0 bg-lime-300 p-1 rounded-tr-lg rounded-bl-lg backdrop-blur flex items-center gap-1    duration-200  '>
+                            < TiPin className="text-black"/>
+                            <p className='text-sm text-black'>Featured</p>
+                        </div>
+                        <Image src={Copas} width={500} height={500} alt='QrCode'   
+                        className="rounded-t-lg"
+                      /> 
+                        <div className='absolute inset-0 translate-y-[100%] group-hover:translate-y-0 px-4 bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 py-7 transition-all duration-300  rounded-t-lg '>
+                            <Link href="/copasabangku" className='flex justify-center items-center gap-2 py-[50px] group 0 hover:text-[#05b6d3]  text-gray-200 '>View Project
+                            <FaArrowRight/>
+                            </Link>
+
+                        </div>
+                        </div>
+                        {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div> */}
+                       
+                        <div className='p-4'>
+                            <h2 className='md:text-xl text-lg font-bold group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] via-[#d9f99d] to-[#bef264]    '>Copas Abangkuu </h2>
+                            <p className='md:text-md text-sm dark:text-dark-100 text-white-100 py-3'>A simple words list application that you can copy and paste, words that are currently trending on social media. </p>
+                            <div className='flex items-center gap-2'>
+                                <ReactLogo />
+                                <TypescriptLogo/>
+                                <TailwindLogo/>
+                                < NextLogo/>
+                                <FramerLogo/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className='flex flex-col'>
                     <div className='dark:bg-[#1e1e1e] bg-[#fff] rounded-lg  border-slate-200 dark:border-none border-2 hover:shadow-md hover:scale-[102%] duration-300 ease-in-out relative group '>
                         <div className='overflow-hidden relative group  '>

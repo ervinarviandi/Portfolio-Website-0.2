@@ -11,7 +11,10 @@ import Link from 'next/link'
 
 
 
-const Hero = () => {
+const Hero =  () => {
+
+
+
   const [isLoading, setLoading] = useState(true);
   
   useEffect(() => {
@@ -58,7 +61,7 @@ const Hero = () => {
                 <div className='flex flex-col'>
                     <div className='md:block hidden flex-end'>
                     <Image src={Logo} width={350} height={350} alt="Profile" priority={true} placeholder='blur'  className={`
-              duration-700 ease-in-out group-hover:opacity-75
+              duration-700 ease-in-out group-hover:opacity-75 rotate-6
               ${
                 isLoading
                   ? "scale-110 blur-2xl grayscale"

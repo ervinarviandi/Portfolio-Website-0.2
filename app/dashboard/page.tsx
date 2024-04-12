@@ -4,6 +4,7 @@ import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
 import { FaGithub } from "react-icons/fa";
 import Link from 'next/link';
+import PageInsight from "@/app/dashboard/PageInsight"
 
 
 const page = () => {
@@ -35,6 +36,8 @@ const page = () => {
         blockSize={12} blockMargin={4}  year="last" colorScheme='light'
         theme={explicitTheme} 
         /> 
+
+        <PageInsight/>
         </div>
         
         </div>
