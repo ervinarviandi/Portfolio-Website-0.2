@@ -16,7 +16,7 @@ import Marquee from 'react-fast-marquee'
 
 
 
-const page = () => {
+const Page = () => {
 
     const [isLoading, setLoading] = useState(true);
 
@@ -99,4 +99,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

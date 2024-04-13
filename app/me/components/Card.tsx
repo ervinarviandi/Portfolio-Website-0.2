@@ -9,8 +9,8 @@ const Card = () => {
   <div>
     <div className="flex flex-col mt-5 ">
               {
-                ItemsList .map((card, index) =>  (
-                  <Link href={card.link}>
+                ItemsList.map((card, index) =>  (
+                  <Link  href={card.link}>
                   <div key={index}  className=" rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out group border-indigo-400 my-2 border-2 backdrop-blur dark:bg-[#111010] bg-gray-100/60 hover:border-l-sky-300   relative group overflow-hidden group-hover:bg-gradient-to-r from-emerald-300 to-sky-300" data-aos="zoom-in-down" data-aos-delay="300" >
                    
                     <div className="p-4 flex justify-between items-center overflow-hidden"> 
