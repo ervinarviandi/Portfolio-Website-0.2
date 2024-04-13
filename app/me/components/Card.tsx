@@ -2,7 +2,7 @@ import React from 'react'
 import ItemsList from "@/app/me/components/Data"
 import Link from "next/link"
 import { TbArrowNarrowRight } from "react-icons/tb";
-import { LuGithub } from "react-icons/lu";
+
 const Card = () => {
   return (
   <>
@@ -10,8 +10,8 @@ const Card = () => {
     <div className="flex flex-col mt-5 ">
               {
                 ItemsList.map((card, index) =>  (
-                  <Link  href={card.link}>
-                  <div key={index}  className=" rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out group border-indigo-400 my-2 border-2 backdrop-blur dark:bg-[#111010] bg-gray-100/60 hover:border-l-sky-300   relative group overflow-hidden group-hover:bg-gradient-to-r from-emerald-300 to-sky-300" data-aos="zoom-in-down" data-aos-delay="300" >
+                  <Link key={index}  href={card.link}>
+                  <div  className=" rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out group border-indigo-400 my-2 border-2 backdrop-blur dark:bg-[#111010] bg-gray-100/60 hover:border-l-sky-300   relative group overflow-hidden group-hover:bg-gradient-to-r from-emerald-300 to-sky-300" data-aos="zoom-in-down" data-aos-delay="300" >
                    
                     <div className="p-4 flex justify-between items-center overflow-hidden"> 
                     <div className='flex  items-center gap-2 '>
