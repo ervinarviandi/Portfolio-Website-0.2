@@ -63,6 +63,8 @@ export const WavyBackground = ({
 
   const waveColors = colors ?? [
     "#38bdf8",
+    // "#bef264",
+    "#6ee7b7",
     "#818cf8",
     "#c084fc",
     "#e879f9",
@@ -117,14 +119,14 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute inset-0 z-0"
+        className=" -mt-32 inset-0 z-0"
         ref={canvasRef}
         id="canvas"
         style={{
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
-      <div className={cn("relative z-10", className)} {...props}>
+      <div className={cn("  z-10", className)} {...props}>
         {children}
       </div>
     </div>

@@ -24,6 +24,12 @@
   background-blend-mode: multiply; */
 }
 
+.my-bg {
+  background: url(../app/Assets/background/bg-gradient-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 
