@@ -1,47 +1,54 @@
 "use client"
-import Navigation from '@/components/Navigation';
-import React from 'react'
-import GitHubCalendar from 'react-github-calendar';
-import { FaGithub } from "react-icons/fa";
-import Link from 'next/link';
+import Navigation from "@/components/Navigation"
+import React from "react"
+import GitHubCalendar from "react-github-calendar"
+import { FaGithub } from "react-icons/fa"
+import Link from "next/link"
 import PageInsight from "@/app/dashboard/PageInsight"
 
-
 const page = () => {
+  const explicitTheme: any = {
+    light: ["#1e1e1e", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+    dark: ["#383838", "#4D455D", "#7DB9B6", "#F5E9CF", "#E96479"],
+  }
 
-  const explicitTheme:any = {
-    light: ['#1e1e1e', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-    dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
-  };
- 
   return (
     <>
-    <Navigation/>
-    <div className='w-full pt-20 MyDashboard' data-aos="fade-up">
-        <div className='md:max-w-7xl  mx-auto lg:px-10 px-5'>
-        <h1 className='font-bold md:text-5xl text-2xl text-[#000] dark:text-[#fff] mt-4'>Dashboard</h1>
-        <p className='md:text-lg text-sm dark:text-dark-100 text-white-100 mt-4'>My contributions from last year on github.</p>
-        <hr className=' border-dashed  dark:border-dark-100 border-[#525252] border-1 my-5' />
-            <div className='md:flex justify-between items-center mt-5'>
-                <div className="flex items-center gap-2 my-2 md:text-xl text-md">
-                <FaGithub/>
-                <h1>Github Contributions</h1>
-                </div>
-                <div>
-                    <Link href="https://github.com/ervinarviandi">@ervinarviandi</Link>
-                </div>
+      <Navigation />
+      <div className="MyDashboard w-full pt-20" data-aos="fade-up">
+        <div className="mx-auto  px-5 md:max-w-7xl lg:px-10">
+          <h1 className="mt-4 text-2xl font-bold text-[#000] dark:text-[#fff] md:text-5xl">
+            Dashboard
+          </h1>
+          <p className="mt-4 text-sm text-white-100 dark:text-dark-100 md:text-lg">
+            My contributions from last year on github.
+          </p>
+          <hr className=" border-1  my-5 border-dashed border-[#525252] dark:border-dark-100" />
+          <div className="mt-5 items-center justify-between md:flex">
+            <div className="text-md my-2 flex items-center gap-2 md:text-xl">
+              <FaGithub />
+              <h1>Github Contributions</h1>
             </div>
-        <div className='  dark:text-dark-100 text-white-100  rounded-lg overflow-hidden mt-5'> 
-        <GitHubCalendar  username="ervinarviandi" 
-        blockSize={12} blockMargin={4}  year="last" colorScheme='light'
-        theme={explicitTheme} 
-        /> 
+            <div>
+              <Link href="https://github.com/ervinarviandi">
+                @ervinarviandi
+              </Link>
+            </div>
+          </div>
+          <div className="  mt-5 overflow-hidden  rounded-lg text-white-100 dark:text-dark-100">
+            <GitHubCalendar
+              username="ervinarviandi"
+              blockSize={12}
+              blockMargin={4}
+              year="last"
+              colorScheme="light"
+              theme={explicitTheme}
+            />
 
-        <PageInsight/>
+            {/* <PageInsight/> */}
+          </div>
         </div>
-        
-        </div>
-    </div>
+      </div>
     </>
   )
 }
