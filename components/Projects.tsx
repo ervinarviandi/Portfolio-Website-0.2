@@ -30,7 +30,7 @@ const Projects = () => {
         <p className="text-md mt-4 text-white-100 dark:text-dark-100 md:text-lg lg:w-10/12">
           {Description}
         </p>
-        <div className="mx-auto mt-4 grid  max-w-4xl  gap-5 md:grid-cols-2">
+        <div className="mx-auto mt-4 grid    gap-5 md:grid-cols-3">
           <div className="flex flex-col">
             <div className="group relative rounded-lg  border-2 border-slate-200 bg-[#fff] duration-300 ease-in-out hover:scale-[102%] hover:shadow-md dark:border-none dark:bg-[#1e1e1e] ">
               <div className="group relative overflow-hidden  ">
@@ -44,6 +44,7 @@ const Projects = () => {
                   height={500}
                   alt="QrCode"
                   className="rounded-t-lg"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 translate-y-[100%] rounded-t-lg bg-gradient-to-b from-[#000000]/60 via-[#000000]/90 to-[#000000]/90 px-4 py-7 transition-all duration-300  group-hover:translate-y-0 ">
                   <Link
@@ -286,15 +287,15 @@ const Projects = () => {
               </div>
             </div>
           </div> */}
-          <div className="flex justify-between">
-            <Link
-              href="/portfolio"
-              className=" item-center flex gap-2 text-sm dark:text-dark-100"
-            >
-              View All Projects
-              <HiOutlineArrowCircleRight size={20} />
-            </Link>
-          </div>
+        </div>
+        <div className="my-5 flex justify-between">
+          <Link
+            href="/portfolio"
+            className=" item-center flex gap-2 text-sm dark:text-dark-100"
+          >
+            View All Projects
+            <HiOutlineArrowCircleRight size={20} />
+          </Link>
         </div>
       </div>
     </div>
